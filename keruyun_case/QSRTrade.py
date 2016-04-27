@@ -10,6 +10,7 @@ import json
 import requests
 import random
 import MySQLdb
+import unittest
 # connect=MySQLdb.connect(
 #     host='rdst5ai4d32fe3qd6if46public.mysql.rds.aliyuncs.com',
 #     port=3306,
@@ -165,7 +166,7 @@ for m in range(x):
 				"deviceIdenty": "94:a1:a2:30:8f:7f",
 				"shopIdenty": 810002790,
 				"statusFlag": 1,
-				"uuid":"%s%d"%("2a091f451602425d9fa8e363d087c",y),
+				"uuid":"%s%d"%("2a091f451602425d9fa8e363d087c1",y),
 				"changed": "true"
 			}, {
 				"creatorId": 88888904893,
@@ -237,7 +238,7 @@ for m in range(x):
 			"sourceChild": 1,
 			"tradeAmount": 6.10,
 			"tradeAmountBefore": 6.10,
-			"tradeNo": "1011604271535401231%"%y,
+			"tradeNo": "101160427153540123%d"%y,
 			"tradePayForm": 1,
 			"tradePayStatus": 1,
 			"tradePeopleCount": 1,
@@ -275,17 +276,16 @@ for m in range(x):
 		print 'error,please try again!'
 
 # if __name__=='__main__':
-#     url='http://gitlab.shishike.com/sync/api/wikis/sync/commercial_order_setting'
-#     shishike(url)
-#     testunit = unittest.TestSuite()
-#     testunit.addTest(shishike)
-#     timestr = time.strftime('%Y%m%d%H%M%d', time.localtime(time.time()))
 #
-# filename = 'D:\\result' + timestr + '.html'
-# fp = file(filename, 'wb')
-# runner = HTMLTestRunner.HTMLTestRunner(
-#      stream=fp,
-#      title=u'自动化测试报告',
-#      description=u'自动化测试结果'
-#      )
-# runner.run(testunit)
+#     testunit = unittest.TestSuite()
+#     testunit.addTest(testQSR)
+#     timestr = time.strftime('%Y%m%d%H%M%d', time.localtime(time.time()))
+# #
+# # filename = 'D:\\result' + timestr + '.html'
+# # fp = file(filename, 'wb')
+# # runner = HTMLTestRunner.HTMLTestRunner(
+# #      stream=fp,
+# #      title=u'自动化测试报告',
+# #      description=u'自动化测试结果'
+# #      )
+# # runner.run(testunit)
