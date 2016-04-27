@@ -21,11 +21,11 @@ import MySQLdb
 # a=cur.execute("select * from trade where shop_identy='810002790' ")
 
 
-x=random.randint(1,99)
+x=random.randint(10,99)
 m=1
 for m in range(x):
 	i = random.randint(1461726490000, 1561726497979)
-	y = random.randint(10, 99)
+	y = random.randint(100, 999)
 	print i, y
 	tradedata={
 	"appType": "5",
@@ -43,7 +43,7 @@ for m in range(x):
 					"payModeName": "现金",
 					"payModelGroup": 2,
 					"paySource": 1,
-					"paymentUuid": "%s%d"%('b663b8067b9349919252dcda9f9879',y),
+					"paymentUuid": "%s%d"%('b663b8067b9349919252dcda9f987',y),
 					"refundWay": 1,
 					"usefulAmount": 6.1,
 					"brandIdenty": 4881,
@@ -52,7 +52,7 @@ for m in range(x):
 					"deviceIdenty": "94:a1:a2:30:8f:7f",
 					"shopIdenty": 810002790,
 					"statusFlag": 1,
-					"uuid":"%s%d"%("d2e6d05624dc4b7fac1bd2c2800745",y),
+					"uuid":"%s%d"%("d2e6d05624dc4b7fac1bd2c280074",y),
 					"changed": "true"
 				}],
 				"actualAmount": 6.1,
@@ -62,7 +62,7 @@ for m in range(x):
 				"isPaid": 1,
 				"paymentType": 1,
 				"receivableAmount": 6.10,
-				"relateUuid": "%s%d"%("3d154e6981cf4d629e1e646aae7c1d",y),
+				"relateUuid": "%s%d"%("3d154e6981cf4d629e1e646aae7c1",y),
 				"updatorId": 88888904893,
 				"updatorName": "admin",
 				"brandIdenty": 4881,
@@ -71,10 +71,10 @@ for m in range(x):
 				"deviceIdenty": "94:a1:a2:30:8f:7f",
 				"shopIdenty": 810002790,
 				"statusFlag": 1,
-				"uuid":"%s%d"%("b663b8067b9349919252dcda9f9879",y),
+				"uuid":"%s%d"%("b663b8067b9349919252dcda9f987",y),
 				"changed": "true"
 			}],
-			"relateUuid":"%s%d"% ("3d154e6981cf4d629e1e646aae7c1d",y),
+			"relateUuid":"%s%d"% ("3d154e6981cf4d629e1e646aae7c1",y),
 			"tradePayForm": 1,
 			"updatorId": 88888904893,
 			"updatorName": "admin"
@@ -85,7 +85,7 @@ for m in range(x):
 				"creatorName": "admin",
 				"deliveryPlatform": 1,
 				"serialNumber": "008",
-				"tradeUuid":"%s%d"%("3d154e6981cf4d629e1e646aae7c1d",y),
+				"tradeUuid":"%s%d"%("3d154e6981cf4d629e1e646aae7c1",y),
 				"updatorId": 88888904893,
 				"updatorName": "admin",
 				"brandIdenty": 4881,
@@ -94,7 +94,7 @@ for m in range(x):
 				"deviceIdenty": "94:a1:a2:30:8f:7f",
 				"shopIdenty": 810002790,
 				"statusFlag": 1,
-				"uuid":"%s%d"%("3951e49c6e7e4c9899709e89a173c4",y),
+				"uuid":"%s%d"%("3951e49c6e7e4c9899709e89a173c",y),
 				"changed": "true"
 			},
 			"tradeItems": [{
@@ -113,9 +113,9 @@ for m in range(x):
 				"saleType": 2,
 				"skuId": 296763,
 				"skuName": "测试导入127",
-				"skuUuid":"%s%d"%("43b9067e34f848fbbae1dbd523c77c",y),
+				"skuUuid":"%s%d"%("43b9067e34f848fbbae1dbd523c77",y),
 				"sort": 0,
-				"tradeUuid":"%s%d"%("3d154e6981cf4d629e1e646aae7c1d",y),
+				"tradeUuid":"%s%d"%("3d154e6981cf4d629e1e646aae7c1",y),
 				"type": 0,
 				"unitName": "份",
 				"updatorId": 88888904893,
@@ -126,7 +126,7 @@ for m in range(x):
 				"deviceIdenty": "94:a1:a2:30:8f:7f",
 				"shopIdenty": 810002790,
 				"statusFlag": 1,
-				"uuid":"%s%d"%("b52cc023e332411194f05cb2858124",y),
+				"uuid":"%s%d"%("b52cc023e332411194f05cb285812",y),
 				"changed": "true"
 			}],
 			"tradePrivileges": [{
@@ -137,7 +137,7 @@ for m in range(x):
 				"privilegeType": 12,
 				"privilegeValue": 1.11,
 				"promoId": 16431,
-				"tradeUuid":"%s%d"%("3d154e6981cf4d629e1e646aae7c1d",y),
+				"tradeUuid":"%s%d"%("3d154e6981cf4d629e1e646aae7c1",y),
 				"updatorId": 88888904893,
 				"updatorName": "admin",
 				"brandIdenty": 4881,
@@ -146,7 +146,7 @@ for m in range(x):
 				"deviceIdenty": "94:a1:a2:30:8f:7f",
 				"shopIdenty": 810002790,
 				"statusFlag": 1,
-				"uuid":"%s%d"%("d7a1223d1e224d89a4a63397bb5a3f",y),
+				"uuid":"%s%d"%("d7a1223d1e224d89a4a63397bb5a3",y),
 				"changed": "true"
 			}, {
 				"creatorId": 88888904893,
@@ -156,7 +156,7 @@ for m in range(x):
 				"privilegeType": 12,
 				"privilegeValue": 0.07,
 				"promoId": 16548,
-				"tradeUuid":"%s%d"%("3d154e6981cf4d629e1e646aae7c1d",y),
+				"tradeUuid":"%s%d"%("3d154e6981cf4d629e1e646aae7c1",y),
 				"updatorId": 88888904893,
 				"updatorName": "admin",
 				"brandIdenty": 4881,
@@ -165,7 +165,7 @@ for m in range(x):
 				"deviceIdenty": "94:a1:a2:30:8f:7f",
 				"shopIdenty": 810002790,
 				"statusFlag": 1,
-				"uuid":"%s%d"%("2a091f451602425d9fa8e363d087c3",y),
+				"uuid":"%s%d"%("2a091f451602425d9fa8e363d087c",y),
 				"changed": "true"
 			}, {
 				"creatorId": 88888904893,
@@ -184,7 +184,7 @@ for m in range(x):
 				"deviceIdenty": "94:a1:a2:30:8f:7f",
 				"shopIdenty": 810002790,
 				"statusFlag": 1,
-				"uuid":"%s%d"%("2b58d27e66614c509789b4f58e680b",y),
+				"uuid":"%s%d"%("2b58d27e66614c509789b4f58e680",y),
 				"changed": "true"
 			}, {
 				"creatorId": 88888904893,
@@ -194,7 +194,7 @@ for m in range(x):
 				"privilegeType": 12,
 				"privilegeValue": 2.00,
 				"promoId": 16408,
-				"tradeUuid":"%s%d"%("3d154e6981cf4d629e1e646aae7c1d",y),
+				"tradeUuid":"%s%d"%("3d154e6981cf4d629e1e646aae7c1",y),
 				"updatorId": 88888904893,
 				"updatorName": "admin",
 				"brandIdenty": 4881,
@@ -203,7 +203,7 @@ for m in range(x):
 				"deviceIdenty": "94:a1:a2:30:8f:7f",
 				"shopIdenty": 810002790,
 				"statusFlag": 1,
-				"uuid":"%s%d"%("da58277cc2e0466b8abbf4609a04ad",y),
+				"uuid":"%s%d"%("da58277cc2e0466b8abbf4609a04a",y),
 				"changed": "true"
 			}, {
 				"creatorId": 88888904893,
@@ -213,7 +213,7 @@ for m in range(x):
 				"privilegeType": 12,
 				"privilegeValue": 3.00,
 				"promoId": 6404,
-				"tradeUuid":"%s%d"%("3d154e6981cf4d629e1e646aae7c1d",y),
+				"tradeUuid":"%s%d"%("3d154e6981cf4d629e1e646aae7c1",y),
 				"updatorId": 88888904893,
 				"updatorName": "admin",
 				"brandIdenty": 4881,
@@ -222,7 +222,7 @@ for m in range(x):
 				"deviceIdenty": "94:a1:a2:30:8f:7f",
 				"shopIdenty": 810002790,
 				"statusFlag": 1,
-				"uuid":"%s%d"%("f9aabbaa1d21451d8e2c56077c843e",y),
+				"uuid":"%s%d"%("f9aabbaa1d21451d8e2c56077c843",y),
 				"changed": "true"
 			}],
 			"businessType": 1,
@@ -237,7 +237,7 @@ for m in range(x):
 			"sourceChild": 1,
 			"tradeAmount": 6.10,
 			"tradeAmountBefore": 6.10,
-			"tradeNo": "1011604271535401231%d"%y,
+			"tradeNo": "1011604271535401231%"%y,
 			"tradePayForm": 1,
 			"tradePayStatus": 1,
 			"tradePeopleCount": 1,
@@ -252,12 +252,12 @@ for m in range(x):
 			"deviceIdenty": "94:a1:a2:30:8f:7f",
 			"shopIdenty": 810002790,
 			"statusFlag": 1,
-			"uuid":"%s%d"%("3d154e6981cf4d629e1e646aae7c1d",y),
+			"uuid":"%s%d"%("3d154e6981cf4d629e1e646aae7c1",y),
 			"changed": "true"
 		}
 	},
 	"deviceID": "94:a1:a2:30:8f:7f",
-	"shopID": 810002790,
+	"shopID": 810005454,
 	"systemType": "android",
 	"versionCode": "2110060701",
 	"versionName": "6.7.1"
