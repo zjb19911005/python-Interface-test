@@ -199,6 +199,7 @@ class testQSRtrade(unittest.TestCase):
 				print '第%d次测试通过'% m
 			else:
 				print '第%d次测试失败' % m
+			assert self.re.status_code==200
 		print "本次一共测试%d次" % m
 	# def tearDown(self):
 	# 	assert self.re.status_code==200
