@@ -271,9 +271,9 @@ for m in range(x):
 	if m==1 and re.status_code==200:
 		print re.text
 	elif re.status_code==200:
-		print '第%d次测试通过'%m
+		print '第%d次测试通过'% m
 	else:
-		print 'error,please try again!'
+		print '第%d次测试失败' % m
 
 # if __name__=='__main__':
 #
