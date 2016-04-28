@@ -11,6 +11,8 @@ import requests
 import random
 import MySQLdb
 import unittest
+import time
+import HTMLTestRunner
 # connect=MySQLdb.connect(
 #     host='rdst5ai4d32fe3qd6if46public.mysql.rds.aliyuncs.com',
 #     port=3306,
@@ -21,14 +23,16 @@ import unittest
 # cur=connect.cursor()
 # a=cur.execute("select * from trade where shop_identy='810002790' ")
 
-
-x=random.randint(10,99)
-m=1
-for m in range(x):
-	i = random.randint(1461726490000, 1561726497979)
-	y = random.randint(100, 999)
-	print i, y
-	tradedata={
+class testQSRtrade(unittest.TestCase):
+	def setUp(self):
+		self.x=random.randint(10,99)
+		self.m=1
+	def test001(self):
+		for m in range(self.x):
+			self.i = random.randint(1461726490000, 1561726497979)
+			self.y = random.randint(100, 999)
+			print self.i,self.y
+			tradedata={
 	"appType": "5",
 	"brandID": 4881,
 	"content": {
@@ -44,16 +48,16 @@ for m in range(x):
 					"payModeName": "现金",
 					"payModelGroup": 2,
 					"paySource": 1,
-					"paymentUuid": "%s%d"%('b663b8067b9349919252dcda9f987',y),
+					"paymentUuid": "%s%d"%('b663b8067b9349919252dcda9f987',self.y),
 					"refundWay": 1,
 					"usefulAmount": 6.1,
 					"brandIdenty": 4881,
-					"clientCreateTime": i,
-					"clientUpdateTime": i,
+					"clientCreateTime": self.i,
+					"clientUpdateTime": self.i,
 					"deviceIdenty": "94:a1:a2:30:8f:7f",
 					"shopIdenty": 810002790,
 					"statusFlag": 1,
-					"uuid":"%s%d"%("d2e6d05624dc4b7fac1bd2c280074",y),
+					"uuid":"%s%d"%("d2e6d05624dc4b7fac1bd2c280074",self.y),
 					"changed": "true"
 				}],
 				"actualAmount": 6.1,
@@ -63,19 +67,19 @@ for m in range(x):
 				"isPaid": 1,
 				"paymentType": 1,
 				"receivableAmount": 6.10,
-				"relateUuid": "%s%d"%("3d154e6981cf4d629e1e646aae7c1",y),
+				"relateUuid": "%s%d"%("3d154e6981cf4d629e1e646aae7c1",self.y),
 				"updatorId": 88888904893,
 				"updatorName": "admin",
 				"brandIdenty": 4881,
-				"clientCreateTime": i,
-				"clientUpdateTime": i,
+				"clientCreateTime": self.i,
+				"clientUpdateTime": self.i,
 				"deviceIdenty": "94:a1:a2:30:8f:7f",
 				"shopIdenty": 810002790,
 				"statusFlag": 1,
-				"uuid":"%s%d"%("b663b8067b9349919252dcda9f987",y),
+				"uuid":"%s%d"%("b663b8067b9349919252dcda9f987",self.y),
 				"changed": "true"
 			}],
-			"relateUuid":"%s%d"% ("3d154e6981cf4d629e1e646aae7c1",y),
+			"relateUuid":"%s%d"% ("3d154e6981cf4d629e1e646aae7c1",self.y),
 			"tradePayForm": 1,
 			"updatorId": 88888904893,
 			"updatorName": "admin"
@@ -86,16 +90,16 @@ for m in range(x):
 				"creatorName": "admin",
 				"deliveryPlatform": 1,
 				"serialNumber": "008",
-				"tradeUuid":"%s%d"%("3d154e6981cf4d629e1e646aae7c1",y),
+				"tradeUuid":"%s%d"%("3d154e6981cf4d629e1e646aae7c1",self.y),
 				"updatorId": 88888904893,
 				"updatorName": "admin",
 				"brandIdenty": 4881,
-				"clientCreateTime": i,
-				"clientUpdateTime": i,
+				"clientCreateTime": self.i,
+				"clientUpdateTime": self.i,
 				"deviceIdenty": "94:a1:a2:30:8f:7f",
 				"shopIdenty": 810002790,
 				"statusFlag": 1,
-				"uuid":"%s%d"%("3951e49c6e7e4c9899709e89a173c",y),
+				"uuid":"%s%d"%("3951e49c6e7e4c9899709e89a173c",self.y),
 				"changed": "true"
 			},
 			"tradeItems": [{
@@ -114,20 +118,20 @@ for m in range(x):
 				"saleType": 2,
 				"skuId": 296763,
 				"skuName": "测试导入127",
-				"skuUuid":"%s%d"%("43b9067e34f848fbbae1dbd523c77",y),
+				"skuUuid":"%s%d"%("43b9067e34f848fbbae1dbd523c77",self.y),
 				"sort": 0,
-				"tradeUuid":"%s%d"%("3d154e6981cf4d629e1e646aae7c1",y),
+				"tradeUuid":"%s%d"%("3d154e6981cf4d629e1e646aae7c1",self.y),
 				"type": 0,
 				"unitName": "份",
 				"updatorId": 88888904893,
 				"updatorName": "admin",
 				"brandIdenty": 4881,
-				"clientCreateTime": i,
-				"clientUpdateTime": i,
+				"clientCreateTime": self.i,
+				"clientUpdateTime": self.i,
 				"deviceIdenty": "94:a1:a2:30:8f:7f",
 				"shopIdenty": 810002790,
 				"statusFlag": 1,
-				"uuid":"%s%d"%("b52cc023e332411194f05cb285812",y),
+				"uuid":"%s%d"%("b52cc023e332411194f05cb285812",self.y),
 				"changed": "true"
 			}],
 			"tradePrivileges": [{
@@ -138,16 +142,16 @@ for m in range(x):
 				"privilegeType": 12,
 				"privilegeValue": 1.11,
 				"promoId": 16431,
-				"tradeUuid":"%s%d"%("3d154e6981cf4d629e1e646aae7c1",y),
+				"tradeUuid":"%s%d"%("3d154e6981cf4d629e1e646aae7c1",self.y),
 				"updatorId": 88888904893,
 				"updatorName": "admin",
 				"brandIdenty": 4881,
-				"clientCreateTime": i,
-				"clientUpdateTime": i,
+				"clientCreateTime": self.i,
+				"clientUpdateTime": self.i,
 				"deviceIdenty": "94:a1:a2:30:8f:7f",
 				"shopIdenty": 810002790,
 				"statusFlag": 1,
-				"uuid":"%s%d"%("d7a1223d1e224d89a4a63397bb5a3",y),
+				"uuid":"%s%d"%("d7a1223d1e224d89a4a63397bb5a3",self.y),
 				"changed": "true"
 			}, {
 				"creatorId": 88888904893,
@@ -157,16 +161,16 @@ for m in range(x):
 				"privilegeType": 12,
 				"privilegeValue": 0.07,
 				"promoId": 16548,
-				"tradeUuid":"%s%d"%("3d154e6981cf4d629e1e646aae7c1",y),
+				"tradeUuid":"%s%d"%("3d154e6981cf4d629e1e646aae7c1",self.y),
 				"updatorId": 88888904893,
 				"updatorName": "admin",
 				"brandIdenty": 4881,
-				"clientCreateTime": i,
-				"clientUpdateTime": i,
+				"clientCreateTime": self.i,
+				"clientUpdateTime": self.i,
 				"deviceIdenty": "94:a1:a2:30:8f:7f",
 				"shopIdenty": 810002790,
 				"statusFlag": 1,
-				"uuid":"%s%d"%("2a091f451602425d9fa8e363d087c1",y),
+				"uuid":"%s%d"%("2a091f451602425d9fa8e363d087c1",self.y),
 				"changed": "true"
 			}, {
 				"creatorId": 88888904893,
@@ -176,16 +180,16 @@ for m in range(x):
 				"privilegeType": 12,
 				"privilegeValue": 2.00,
 				"promoId": 16427,
-				"tradeUuid":"%s%d"%("3d154e6981cf4d629e1e646aae7c1d",y),
+				"tradeUuid":"%s%d"%("3d154e6981cf4d629e1e646aae7c1d",self.y),
 				"updatorId": 88888904893,
 				"updatorName": "admin",
 				"brandIdenty": 4881,
-				"clientCreateTime": i,
-				"clientUpdateTime": i,
+				"clientCreateTime": self.i,
+				"clientUpdateTime": self.i,
 				"deviceIdenty": "94:a1:a2:30:8f:7f",
 				"shopIdenty": 810002790,
 				"statusFlag": 1,
-				"uuid":"%s%d"%("2b58d27e66614c509789b4f58e680",y),
+				"uuid":"%s%d"%("2b58d27e66614c509789b4f58e680",self.y),
 				"changed": "true"
 			}, {
 				"creatorId": 88888904893,
@@ -195,16 +199,16 @@ for m in range(x):
 				"privilegeType": 12,
 				"privilegeValue": 2.00,
 				"promoId": 16408,
-				"tradeUuid":"%s%d"%("3d154e6981cf4d629e1e646aae7c1",y),
+				"tradeUuid":"%s%d"%("3d154e6981cf4d629e1e646aae7c1",self.y),
 				"updatorId": 88888904893,
 				"updatorName": "admin",
 				"brandIdenty": 4881,
-				"clientCreateTime": i,
-				"clientUpdateTime": i,
+				"clientCreateTime": self.i,
+				"clientUpdateTime": self.i,
 				"deviceIdenty": "94:a1:a2:30:8f:7f",
 				"shopIdenty": 810002790,
 				"statusFlag": 1,
-				"uuid":"%s%d"%("da58277cc2e0466b8abbf4609a04a",y),
+				"uuid":"%s%d"%("da58277cc2e0466b8abbf4609a04a",self.y),
 				"changed": "true"
 			}, {
 				"creatorId": 88888904893,
@@ -214,16 +218,16 @@ for m in range(x):
 				"privilegeType": 12,
 				"privilegeValue": 3.00,
 				"promoId": 6404,
-				"tradeUuid":"%s%d"%("3d154e6981cf4d629e1e646aae7c1",y),
+				"tradeUuid":"%s%d"%("3d154e6981cf4d629e1e646aae7c1",self.y),
 				"updatorId": 88888904893,
 				"updatorName": "admin",
 				"brandIdenty": 4881,
-				"clientCreateTime": i,
+				"clientCreateTime": self.i,
 				"clientUpdateTime": 1461742758002,
 				"deviceIdenty": "94:a1:a2:30:8f:7f",
 				"shopIdenty": 810002790,
 				"statusFlag": 1,
-				"uuid":"%s%d"%("f9aabbaa1d21451d8e2c56077c843",y),
+				"uuid":"%s%d"%("f9aabbaa1d21451d8e2c56077c843",self.y),
 				"changed": "true"
 			}],
 			"businessType": 1,
@@ -238,7 +242,7 @@ for m in range(x):
 			"sourceChild": 1,
 			"tradeAmount": 6.10,
 			"tradeAmountBefore": 6.10,
-			"tradeNo": "101160427153540123%d"%y,
+			"tradeNo": "101160427153540123%d"%self.y,
 			"tradePayForm": 1,
 			"tradePayStatus": 1,
 			"tradePeopleCount": 1,
@@ -248,44 +252,34 @@ for m in range(x):
 			"updatorId": 88888904893,
 			"updatorName": "admin",
 			"brandIdenty": 4881,
-			"clientCreateTime": i,
-			"clientUpdateTime": i,
+			"clientCreateTime": self.i,
+			"clientUpdateTime": self.i,
 			"deviceIdenty": "94:a1:a2:30:8f:7f",
 			"shopIdenty": 810002790,
 			"statusFlag": 1,
-			"uuid":"%s%d"%("3d154e6981cf4d629e1e646aae7c1",y),
+			"uuid":"%s%d"%("3d154e6981cf4d629e1e646aae7c1",self.y),
 			"changed": "true"
-		}
-	},
+				}
+			},
 	"deviceID": "94:a1:a2:30:8f:7f",
 	"shopID": 810005454,
 	"systemType": "android",
 	"versionCode": "2110060701",
 	"versionName": "6.7.1"
-	}
-	jdata=json.dumps(tradedata)
-	head={'Content-Type':'application/json'}
+				}
+			jdata=json.dumps(tradedata)
+			head={'Content-Type':'application/json'}
 
-	re=requests.post("http://121.40.154.42:9820/CalmRouter/v1/trade/create+cash",data=jdata,headers=head)
-	m=m+1,
-	if m==1 and re.status_code==200:
-		print re.text
-	elif re.status_code==200:
-		print '第%d次测试通过'% m
-	else:
-		print '第%d次测试失败' % m
-
-# if __name__=='__main__':
-#
-#     testunit = unittest.TestSuite()
-#     testunit.addTest(testQSR)
-#     timestr = time.strftime('%Y%m%d%H%M%d', time.localtime(time.time()))
-# #
-# # filename = 'D:\\result' + timestr + '.html'
-# # fp = file(filename, 'wb')
-# # runner = HTMLTestRunner.HTMLTestRunner(
-# #      stream=fp,
-# #      title=u'自动化测试报告',
-# #      description=u'自动化测试结果'
-# #      )
-# # runner.run(testunit)
+			self.re=requests.post("https://testcalm.keruyun.com/CalmRouter/v1/trade/create+cash",data=jdata,headers=head)
+			m=m+1,
+			if m==1 and self.re.status_code==200:
+				print self.re.text
+			elif self.re.status_code==200:
+				print '第%d次测试通过'% m
+			else:
+				print '第%d次测试失败' % m
+		print "本次一共测试%d次" % m
+	# def tearDown(self):
+	# 	assert self.re.status_code==200
+if __name__=='__main__':
+	unittest.main()
