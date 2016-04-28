@@ -9,29 +9,24 @@ _author__ = 'Junior'
 import json
 import requests
 import random
-import MySQLdb
+import json
+import requests
+import random
+
 import unittest
 import time
 import HTMLTestRunner
-# connect=MySQLdb.connect(
-#     host='rdst5ai4d32fe3qd6if46public.mysql.rds.aliyuncs.com',
-#     port=3306,
-#     user='qgd_stf_wt_qa',
-#     passwd='NPzMwpzYVobbCYBSlv6M',
-#     db='calm_test',
-# )
-# cur=connect.cursor()
-# a=cur.execute("select * from trade where shop_identy='810002790' ")
 
 class testQSRtrade(unittest.TestCase):
-	def setUp(self):
+	def setUp(self):#初始化文件
 		self.x=random.randint(10,99)
 		self.m=1
 	def test001(self):
 		for m in range(self.x):
-			self.i = random.randint(1461832868730, 1561726497979)
-			self.y = random.randint(100, 999)
+			self.i = random.randint(1461832868730, 1561726497979)#订单UUID随机传参
+			self.y = random.randint(100, 999)#服务器时间随机传参
 			print self.i,self.y
+			#传参数据
 			tradedata={
 	"appType": "5",
 	"brandID": 4881,
@@ -188,8 +183,8 @@ class testQSRtrade(unittest.TestCase):
 	"versionCode": "2110060701",
 	"versionName": "6.7.1"
 }
-			jdata=json.dumps(tradedata)
-			head={'Content-Type':'application/json'}
+			jdata=json.dumps(tradedata)#传参json格式化处理
+			head={'Content-Type':'application/json'}#json请求头
 
 			self.re=requests.post("https://testcalm.keruyun.com/CalmRouter/v1/trade/submit",data=jdata,headers=head)
 			m=m+1,
@@ -199,7 +194,7 @@ class testQSRtrade(unittest.TestCase):
 				print '第%d次测试通过'% m
 			else:
 				print '第%d次测试失败' % m
-			assert self.re.status_code==200
+			assert self.re.status_code==200#判断语句
 		print "本次一共测试%d次" % m
 	# def tearDown(self):
 	# 	assert self.re.status_code==200

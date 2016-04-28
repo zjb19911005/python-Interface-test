@@ -9,19 +9,13 @@ _author__ = 'Junior'
 import json
 import requests
 import random
-import MySQLdb
+import json
+import requests
+import random
+
 import unittest
 import time
 import HTMLTestRunner
-# connect=MySQLdb.connect(
-#     host='rdst5ai4d32fe3qd6if46public.mysql.rds.aliyuncs.com',
-#     port=3306,
-#     user='qgd_stf_wt_qa',
-#     passwd='NPzMwpzYVobbCYBSlv6M',
-#     db='calm_test',
-# )
-# cur=connect.cursor()
-# a=cur.execute("select * from trade where shop_identy='810002790' ")
 
 class testQSRtrade(unittest.TestCase):
 	def setUp(self):
