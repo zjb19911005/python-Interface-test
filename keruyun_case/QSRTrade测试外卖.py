@@ -19,7 +19,7 @@ import HTMLTestRunner
 
 class testQSRtrade(unittest.TestCase):
 	def setUp(self):#初始化文件
-		self.x=random.randint(10,99)
+		self.x=random.randint(100,120)
 		self.m=1
 	def test001(self):
 		for m in range(self.x):
@@ -130,7 +130,7 @@ class testQSRtrade(unittest.TestCase):
 		"tradePrivileges": [{
 			"creatorId": 88888904893,
 			"creatorName": "admin",
-			"privilegeAmount": 0.00,
+			"privilegeAmount":self.y,
 			"privilegeName": "餐盒费",
 			"privilegeType": 12,
 			"privilegeValue": 0.00,
@@ -186,7 +186,7 @@ class testQSRtrade(unittest.TestCase):
 			jdata=json.dumps(tradedata)#传参json格式化处理
 			head={'Content-Type':'application/json'}#json请求头
 
-			self.re=requests.post("https://testcalm.keruyun.com/CalmRouter/v1/trade/submit",data=jdata,headers=head)
+			self.re=requests.post("https://testcalm.shishike.com/CalmRouter/v1/trade/submit",data=jdata,headers=head)
 			m=m+1,
 			if m==1 and self.re.status_code==200:
 				print self.re.text
@@ -196,7 +196,8 @@ class testQSRtrade(unittest.TestCase):
 				print '第%d次测试失败' % m
 			assert self.re.status_code==200#判断语句
 		print "本次一共测试%d次" % m
-	# def tearDown(self):
-	# 	assert self.re.status_code==200
+	def tearDown(self):
+		assert self.re.status_code==200
+		print self.re.text
 if __name__=='__main__':
 	unittest.main()

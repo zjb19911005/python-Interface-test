@@ -19,7 +19,7 @@ import HTMLTestRunner
 
 class testQSRtrade(unittest.TestCase):
 	def setUp(self):
-		self.x=random.randint(10,99)
+		self.x=random.randint(1,2)
 		self.m=1
 	def test001(self):
 		for m in range(self.x):
@@ -174,7 +174,7 @@ class testQSRtrade(unittest.TestCase):
 				"privilegeType": 12,
 				"privilegeValue": 2.00,
 				"promoId": 16427,
-				"tradeUuid":"%s%d"%("3d154e6981cf4d629e1e646aae7c1d",self.y),
+				"tradeUuid":"%s%d"%("3d154e6981cf4d629e1e646aae7c1",self.y),
 				"updatorId": 88888904893,
 				"updatorName": "admin",
 				"brandIdenty": 4881,
@@ -256,7 +256,7 @@ class testQSRtrade(unittest.TestCase):
 				}
 			},
 	"deviceID": "94:a1:a2:30:8f:7f",
-	"shopID": 810005454,
+	"shopID": 810002790,
 	"systemType": "android",
 	"versionCode": "2110060701",
 	"versionName": "6.7.1"
@@ -264,16 +264,15 @@ class testQSRtrade(unittest.TestCase):
 			jdata=json.dumps(tradedata)
 			head={'Content-Type':'application/json'}
 
-			self.re=requests.post("https://testcalm.keruyun.com/CalmRouter/v1/trade/create+cash",data=jdata,headers=head)
+			self.re=requests.post("https://testcalm.shishike.com/CalmRouter/v1/trade/create+cash",data=jdata,headers=head)
 			m=m+1,
-			if m==1 and self.re.status_code==200:
-				print self.re.text
-			elif self.re.status_code==200:
-				print '第%d次测试通过'% m
-			else:
-				print '第%d次测试失败' % m
-		print "本次一共测试%d次" % m
-	# def tearDown(self):
-	# 	assert self.re.status_code==200
+		# 	if m==1 and self.re.status_code==200:
+		# 		print self.re.text
+		# 	elif self.re.status_code==200:
+		# 		print '第%d次测试通过'% m
+		# 	else:
+		# 		print '第%d次测试失败' % m
+		# print "本次一共测试%d次" % m
+		print self.re.text
 if __name__=='__main__':
 	unittest.main()
