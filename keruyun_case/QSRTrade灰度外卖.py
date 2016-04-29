@@ -13,6 +13,9 @@ import random
 import unittest
 import time
 import HTMLTestRunner
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
 
 class testQSRtrade(unittest.TestCase):
 	def setUp(self):
@@ -184,16 +187,16 @@ class testQSRtrade(unittest.TestCase):
 
 			self.re=requests.post("https://calm.keruyun.com/CalmRouter/v1/trade/submit",data=jdata,headers=head)
 			m=m+1,
-			if m==1 and self.re.status_code==200:
-				print self.re.text
-			elif self.re.status_code==200:
-				print '第%d次测试通过'% m
+			s = '操作成功'
+			# if self.re.text.find(s)>=0:
+			# 	print '第%d次测试通过' % m
+			# else:
+			# 	print '第%d次测试失败' % m
+			# 	print self.re.text
+			if s in self.re.text:
+				print '第%d次测试通过' % m
 			else:
 				print '第%d次测试失败' % m
-			assert self.re.status_code==200
-
-		print "本次一共测试%d次" % m
-	# def tearDown(self):
-	# 	assert self.re.status_code==200
+				print self.re.text
 if __name__=='__main__':
 	unittest.main()

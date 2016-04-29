@@ -16,6 +16,9 @@ import random
 import unittest
 import time
 import HTMLTestRunner
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
 
 class testQSRtrade(unittest.TestCase):
 	def setUp(self):
@@ -164,7 +167,7 @@ class testQSRtrade(unittest.TestCase):
 				"deviceIdenty": "94:a1:a2:30:8f:7f",
 				"shopIdenty": 810002790,
 				"statusFlag": 1,
-				"uuid":"%s%d"%("2a091f451602425d9fa8e363d087c1",self.y),
+				"uuid":"%s%d"%("2a091f451602425d9fa8e363d087c",self.y),
 				"changed": "true"
 			}, {
 				"creatorId": 88888904893,
@@ -266,13 +269,17 @@ class testQSRtrade(unittest.TestCase):
 
 			self.re=requests.post("https://testcalm.shishike.com/CalmRouter/v1/trade/create+cash",data=jdata,headers=head)
 			m=m+1,
-			if m==1 and self.re.status_code==200:
-				print self.re.text
-			elif self.re.status_code==200:
-				print '第%d次测试通过'% m
+			s='操作成功'
+			# if self.re.text.find(s)>=0:
+			# 	print '第%d次测试通过' % m
+			# else:
+			# 	print '第%d次测试失败' % m
+			# 	print self.re.text
+			if s in self.re.text :
+				print '第%d次测试通过' % m
 			else:
 				print '第%d次测试失败' % m
-		print "本次一共测试%d次" % m
-		print self.re.text
+				print self.re.text
+
 if __name__=='__main__':
 	unittest.main()
