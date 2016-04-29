@@ -192,6 +192,7 @@ class testQSRtrade(unittest.TestCase):
 			self.re=requests.post("https://testcalm.shishike.com/CalmRouter/v1/trade/submit",data=jdata,headers=head)
 			m=m+1,
 			s = '操作成功'
+			#添加返回判断语句
 			# if self.re.text.find(s)>=0:
 			# 	print '第%d次测试通过' % m
 			# else:
