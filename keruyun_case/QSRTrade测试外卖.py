@@ -22,12 +22,12 @@ sys.setdefaultencoding('utf8')
 
 class testQSRtrade(unittest.TestCase):
 	def setUp(self):#初始化文件
-		self.x=random.randint(900,999)
+		self.x=random.randint(1,2)
 		self.m=1
 	def test001(self):
 		for m in range(self.x):
-			self.i = random.randint(1461832868730, 1561726497979)#订单UUID随机传参
-			self.y = random.randint(100000, 999999)#服务器时间随机传参
+			self.i = random.randint(1561832868730, 1562026497979)#服务器时间随机传参
+			self.y = random.randint(10000000, 99999999)#订单UUID随机传参
 			print self.i,self.y
 			#传参数据
 			tradedata={
@@ -42,7 +42,7 @@ class testQSRtrade(unittest.TestCase):
 			"customerPhone": "18608061005",
 			"customerSex": 1,
 			"customerType": 1,
-			"tradeUuid": "%s%d"%("ed23e66787a341da8f721511b2",self.y),
+			"tradeUuid": "%s%d"%("ed23e66787a341da8f721511",self.y),
 			"updatorId": 88888904893,
 			"updatorName": "admin",
 			"brandIdenty": 4881,
@@ -51,7 +51,7 @@ class testQSRtrade(unittest.TestCase):
 			"deviceIdenty": "94:a1:a2:30:8f:7f",
 			"shopIdenty": 810002790,
 			"statusFlag": 1,
-			"uuid": "%s%d"%("97221e428f744d769db9f01ef5",self.y),
+			"uuid": "%s%d"%("97221e428f744d769db9f01e",self.y),
 			"changed": 'true'
 		}],
 		"tradeExtra": {
@@ -65,7 +65,7 @@ class testQSRtrade(unittest.TestCase):
 			"receiverPhone": "18608061005",
 			"receiverSex": 1,
 			"serialNumber": "003",
-			"tradeUuid": "%s%d"%("ed23e66787a341da8f721511b2",self.y),
+			"tradeUuid": "%s%d"%("ed23e66787a341da8f721511",self.y),
 			"updatorId": 88888904893,
 			"updatorName": "admin",
 			"brandIdenty": 4881,
@@ -74,7 +74,7 @@ class testQSRtrade(unittest.TestCase):
 			"deviceIdenty": "94:a1:a2:30:8f:7f",
 			"shopIdenty": 810002790,
 			"statusFlag": 1,
-			"uuid": "%s%d"%("69fa589fa19f4594bd40d92e76",self.y),
+			"uuid": "%s%d"%("69fa589fa19f4594bd40d92e",self.y),
 			"changed": 'true'
 		},
 		"tradeItemProperties": [{
@@ -84,9 +84,9 @@ class testQSRtrade(unittest.TestCase):
 			"price": 0.00,
 			"propertyName": "碟",
 			"propertyType": 4,
-			"propertyUuid":"%s%d"%("f5a6deb2ae0e4700982b1ffa26",self.y),
+			"propertyUuid":"%s%d"%("f5a6deb2ae0e4700982b1ffa",self.y),
 			"quantity": 1,
-			"tradeItemUuid":"%s%d"%("a2c6109b834847f2b69b5a0e7b",self.y),
+			"tradeItemUuid":"%s%d"%("a2c6109b834847f2b69b5a0e",self.y),
 			"updatorId": 88888904893,
 			"updatorName": "admin",
 			"brandIdenty": 4881,
@@ -95,7 +95,7 @@ class testQSRtrade(unittest.TestCase):
 			"deviceIdenty": "94:a1:a2:30:8f:7f",
 			"shopIdenty": 810002790,
 			"statusFlag": 1,
-			"uuid": "%s%d"%("d059ee040d5f420cb7b05dd324",self.y),
+			"uuid": "%s%d"%("d059ee040d5f420cb7b05dd3",self.y),
 			"changed": 'true'
 		}],
 		"tradeItems": [{
@@ -114,9 +114,9 @@ class testQSRtrade(unittest.TestCase):
 			"saleType": 2,
 			"skuId": 20,
 			"skuName": "雪花啤酒",
-			"skuUuid": "%s%d"%("eb831a4afd844b66aec8031b6c",self.y),
+			"skuUuid": "%s%d"%("eb831a4afd844b66aec8031b",self.y),
 			"sort": 0,
-			"tradeUuid": "%s%d"%("ed23e66787a341da8f721511b2",self.y),
+			"tradeUuid": "%s%d"%("ed23e66787a341da8f721511",self.y),
 			"type": 0,
 			"unitName": "份",
 			"updatorId": 88888904893,
@@ -127,7 +127,7 @@ class testQSRtrade(unittest.TestCase):
 			"deviceIdenty": "94:a1:a2:30:8f:7f",
 			"shopIdenty": 810002790,
 			"statusFlag": 1,
-			"uuid": "%s%d"%("a2c6109b834847f2b69b5a0e7b",self.y),
+			"uuid": "%s%d"%("a2c6109b834847f2b69b5a0e",self.y),
 			"changed": 'true'
 		}],
 		"tradePrivileges": [{
@@ -138,7 +138,7 @@ class testQSRtrade(unittest.TestCase):
 			"privilegeType": 12,
 			"privilegeValue": 0.00,
 			"promoId": 6914,
-			"tradeUuid":"%s%d"%("ed23e66787a341da8f721511b2",self.y),
+			"tradeUuid":"%s%d"%("ed23e66787a341da8f721511",self.y),
 			"updatorId": 88888904893,
 			"updatorName": "admin",
 			"brandIdenty": 4881,
@@ -147,7 +147,7 @@ class testQSRtrade(unittest.TestCase):
 			"deviceIdenty": "94:a1:a2:30:8f:7f",
 			"shopIdenty": 810002790,
 			"statusFlag": 1,
-			"uuid": "%s%d"%("ed5172f4871743a4b2c61313b5",self.y),
+			"uuid": "%s%d"%("ed5172f4871743a4b2c61313",self.y),
 			"changed": 'true'
 		}],
 		"businessType": 1,
@@ -162,7 +162,7 @@ class testQSRtrade(unittest.TestCase):
 		"sourceChild": 1,
 		"tradeAmount": 50.00,
 		"tradeAmountBefore": 50.00,
-		"tradeNo": "101160428164045%d" % self.y,
+		"tradeNo": "1011604281640%d" % self.y,
 		"tradePayForm": 1,
 		"tradePayStatus": 1,
 		"tradePeopleCount": 1,
@@ -177,7 +177,7 @@ class testQSRtrade(unittest.TestCase):
 		"deviceIdenty": "94:a1:a2:30:8f:7f",
 		"shopIdenty": 810002790,
 		"statusFlag": 1,
-		"uuid": "%s%d"%("ed23e66787a341da8f721511b2",self.y),
+		"uuid": "%s%d"%("ed23e66787a341da8f721511",self.y),
 		"changed": 'true'
 	},
 	"deviceID": "94:a1:a2:30:8f:7f",
