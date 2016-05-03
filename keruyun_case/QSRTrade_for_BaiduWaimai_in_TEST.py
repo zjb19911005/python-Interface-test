@@ -75,6 +75,7 @@ class testQSRtrade(unittest.TestCase):
 			"shopIdenty": 810002790,
 			"statusFlag": 1,
 			"uuid": "%s%d"%("69fa589fa19f4594bd40d92e",self.y),
+			"delivery_platform":1,
 			"changed": 'true'
 		},
 		"tradeItemProperties": [{
