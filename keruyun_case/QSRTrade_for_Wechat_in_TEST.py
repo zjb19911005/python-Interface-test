@@ -22,7 +22,7 @@ sys.setdefaultencoding('utf8')
 
 class testQSRtrade(unittest.TestCase):
 	def setUp(self):#初始化文件
-		self.x=random.randint(500,999)
+		self.x=random.randint(1,2)
 		self.m=1
 	def test001(self):
 		for m in range(self.x):
@@ -64,7 +64,7 @@ class testQSRtrade(unittest.TestCase):
 			"receiverName": "                    ",
 			"receiverPhone": "18608061005",
 			"receiverSex": 1,
-			"serialNumber": "003",
+			"serialNumber": "",
 			"tradeUuid": "%s%d"%("ed23e66787a341da8f721511",self.y),
 			"updatorId": 88888904893,
 			"updatorName": "admin",
@@ -158,15 +158,15 @@ class testQSRtrade(unittest.TestCase):
 		"privilegeAmount": 0.00,
 		"saleAmount": 50.00,
 		"skuKindCount": 1,
-		"source": 10,
-		"sourceChild": 1,
+		"source": 3,
+		"sourceChild": 32,
 		"tradeAmount": 50.00,
 		"tradeAmountBefore": 50.00,
 		"tradeNo": "1011604281640%d" % self.y,
 		"tradePayForm": 1,
 		"tradePayStatus": 1,
 		"tradePeopleCount": 1,
-		"tradeStatus": 3,
+		"tradeStatus": 1,
 		"tradeTime": 1461832845726,
 		"tradeType": 1,
 		"updatorId": 88888904893,
