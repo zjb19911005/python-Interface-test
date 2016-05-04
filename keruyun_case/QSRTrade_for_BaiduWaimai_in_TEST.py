@@ -12,7 +12,7 @@ import random
 import json
 import requests
 import random
-
+import speedtest_cli
 import unittest
 import time
 import HTMLTestRunner
@@ -25,13 +25,9 @@ class testQSRtrade_Baiduwaimai(unittest.TestCase):
 		self.x=random.randint(1,2)
 		self.m=1
 	def test001(self):
-		for m in range(self.x):
+		for self.m in range(self.x):
 			self.i = random.randint(1561832868730, 1562026497979)#服务器时间随机传参
 			self.y = random.randint(10000000, 99999999)#订单UUID随机传参
-			timestr = time.strftime('%Y-%m-%d：%H：%M：%d', time.localtime(time.time()))
-			print '当前系统时间是：' + timestr
-			print '下单时间传参数是:%d'%(self.i)
-			print '订单UUID传参数是:%d'%(self.y)
 			#传参数据
 			tradedata={
 	"appType": "5",
@@ -192,10 +188,10 @@ class testQSRtrade_Baiduwaimai(unittest.TestCase):
 }
 			jdata=json.dumps(tradedata)#传参json格式化处理
 			head={'Content-Type':'application/json'}#json请求头
-
+			url="http://test.calm.shishike.com/CalmRouter/v1/trade/submit"
 			# self.re=requests.post("https://testcalm.shishike.com/CalmRouter/v1/trade/submit",data=jdata,headers=head)
-			self.re = requests.post("http://test.calm.shishike.com/CalmRouter/v1/trade/submit", data=jdata,headers=head)
-			m=m+1,
+			self.re = requests.post(url, data=jdata,headers=head)
+			self.m=self.m+1,
 			s = '操作成功'
 			#添加返回判断语句
 			# if self.re.text.find(s)>=0:
@@ -203,10 +199,14 @@ class testQSRtrade_Baiduwaimai(unittest.TestCase):
 			# else:
 			# 	print '第%d次测试失败' % m
 			# 	print self.re.text
+			timestr = time.strftime('%Y-%m-%d/%H：%M：%d', time.localtime(time.time()))
+			print "第%d次下单的系统时间是:" % (self.m) + timestr
+			print '第%s次下单时间传参值是:%d' % (self.m,self.i)
+			print '第%s次订单UUID传参值是:%d' % (self.m,self.y)
 			if s in self.re.text:
-				print '第%d次测试通过' % m
+				print '第%d次测试通过' % self.m
 			else:
-				print '第%d次测试失败,返回的错误信息如下:' % m
+				print '第%d次测试失败,返回的错误信息如下:' % self.m
 				print self.re.text
 if __name__=='__main__':
 	unittest.main()
