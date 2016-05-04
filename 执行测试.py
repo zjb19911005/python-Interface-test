@@ -10,7 +10,8 @@ sys.path.append("/D:\PycharmProjects\python-Interface-test\keruyun_case")
 from keruyun_case import *#导入客如云文件的用例
 #将用例组建成数组
 alltestnames=[
-    'keruyun_case.QSR_Trade_for_here_in_TEST'
+    'keruyun_case.QSR_Trade_for_takeout_in_TEST'
+    'keruyun_case.QSR_Trade_for_Wechat_in_TEST'
 ]
 suite =unittest.TestSuite()
 if __name__ == '__main__':

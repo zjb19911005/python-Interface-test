@@ -12,7 +12,7 @@ import random
 import json
 import requests
 import random
-
+import time
 import unittest
 import time
 import HTMLTestRunner
@@ -22,13 +22,16 @@ sys.setdefaultencoding('utf8')
 
 class testQSRtrade_takeout(unittest.TestCase):
 	def setUp(self):#初始化文件
-		self.x=random.randint(1,2)
+		self.x=random.randint(300,500)
 		self.m=1
 	def test001(self):
 		for m in range(self.x):
 			self.i = random.randint(1561832868730, 1562026497979)#服务器时间随机传参
 			self.y = random.randint(10000000, 99999999)#订单UUID随机传参
-			print self.i,self.y
+			timestr = time.strftime('%Y%m%d%H%M%d', time.localtime(time.time()))
+			print '当前系统时间是：' + timestr
+			print '下单时间传参数是：' + self.i
+			print '订单UUID传参数是：' + self.y
 			#传参数据
 			tradedata={
 	"appType": "5",
