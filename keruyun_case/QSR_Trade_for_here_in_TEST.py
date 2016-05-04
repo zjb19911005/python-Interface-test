@@ -28,7 +28,10 @@ class testQSRtrade_here(unittest.TestCase):
 		for m in range(self.x):
 			self.i = random.randint(1461726490000, 1561726497979)
 			self.y = random.randint(100, 999)
-			print self.i,self.y
+			timestr = time.strftime('%Y%m%d%H%M%d', time.localtime(time.time()))
+			print '当前系统时间是：' + timestr
+			print '下单时间传参数是:%d' % (self.i)
+			print '订单UUID传参数是:%d' % (self.y)
 			tradedata={
 	"appType": "5",
 	"brandID": 4881,

@@ -30,8 +30,8 @@ class testQSRtrade_takeout(unittest.TestCase):
 			self.y = random.randint(10000000, 99999999)#订单UUID随机传参
 			timestr = time.strftime('%Y%m%d%H%M%d', time.localtime(time.time()))
 			print '当前系统时间是：' + timestr
-			print '下单时间传参数是：' + self.i
-			print '订单UUID传参数是：' + self.y
+			print '下单时间传参数是:%d' % (self.i)
+			print '订单UUID传参数是:%d' % (self.y)
 			#传参数据
 			tradedata={
 	"appType": "5",
@@ -205,7 +205,7 @@ class testQSRtrade_takeout(unittest.TestCase):
 			if s in self.re.text:
 				print '第%d次测试通过' % m
 			else:
-				print '第%d次测试失败' % m
+				print '第%d次测试失败，返回的错误信息如下:' % m
 				print self.re.text
 if __name__=='__main__':
 	unittest.main()
