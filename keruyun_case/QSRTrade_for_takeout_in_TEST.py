@@ -20,9 +20,9 @@ import sys
 reload(sys)
 sys.setdefaultencoding('utf8')
 
-class testQSRtrade(unittest.TestCase):
+class testQSRtrade_takeout(unittest.TestCase):
 	def setUp(self):#初始化文件
-		self.x=random.randint(500,999)
+		self.x=random.randint(1,2)
 		self.m=1
 	def test001(self):
 		for m in range(self.x):

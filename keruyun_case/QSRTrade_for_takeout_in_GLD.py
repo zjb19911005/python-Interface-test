@@ -17,9 +17,9 @@ import sys
 reload(sys)
 sys.setdefaultencoding('utf8')
 
-class testQSRtrade(unittest.TestCase):
+class gldQSRtrade_takeout(unittest.TestCase):
 	def setUp(self):
-		self.x=random.randint(10,99)
+		self.x=random.randint(1,2)
 		self.m=1
 	def test001(self):
 		for m in range(self.x):

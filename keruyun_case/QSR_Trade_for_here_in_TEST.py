@@ -20,7 +20,7 @@ import sys
 reload(sys)
 sys.setdefaultencoding('utf8')
 
-class testQSRtrade(unittest.TestCase):
+class testQSRtrade_here(unittest.TestCase):
 	def setUp(self):
 		self.x=random.randint(1,2)
 		self.m=1

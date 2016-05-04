@@ -20,7 +20,7 @@ import sys
 reload(sys)
 sys.setdefaultencoding('utf8')
 
-class testQSRtrade(unittest.TestCase):
+class testQSRtrade_Wechat(unittest.TestCase):
 	def setUp(self):#初始化文件
 		self.x=random.randint(1,2)
 		self.m=1
