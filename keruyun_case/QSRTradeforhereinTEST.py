@@ -284,5 +284,5 @@ class testQSRtrade_here(unittest.TestCase):
 				print '第%d次测试失败' % m
 				print self.re.text
 
-# if __name__=='__main__':
-# 	unittest.main()
+if __name__=='__main__':
+	unittest.main()

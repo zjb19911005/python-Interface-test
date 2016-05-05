@@ -208,5 +208,5 @@ class testQSRtrade_Baiduwaimai(unittest.TestCase):
 			else:
 				print '第%d次测试失败,返回的错误信息如下:' % self.m
 				print self.re.text
-# if __name__=='__main__':
-# 	unittest.main()
+if __name__=='__main__':
+	unittest.main()
