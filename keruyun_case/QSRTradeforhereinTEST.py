@@ -270,7 +270,7 @@ class testQSRtrade_here(unittest.TestCase):
 			jdata=json.dumps(tradedata)
 			head={'Content-Type':'application/json'}
 
-			self.re=requests.post("https://testcalm.shishike.com/CalmRouter/v1/trade/create+cash",data=jdata,headers=head)
+			self.re=requests.post("http://test.calm.shishike.com/CalmRouter/v1/trade/create+cash",data=jdata,headers=head)
 			m=m+1,
 			s='操作成功'
 			# if self.re.text.find(s)>=0:
@@ -284,5 +284,5 @@ class testQSRtrade_here(unittest.TestCase):
 				print '第%d次测试失败' % m
 				print self.re.text
 
-if __name__=='__main__':
-	unittest.main()
+# if __name__=='__main__':
+# 	unittest.main()
