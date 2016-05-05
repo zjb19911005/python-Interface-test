@@ -13,7 +13,7 @@ allcase = 'D:\PycharmProjects\python-Interface-test\keruyun_case'#给出执行�
 def creatSuite():#产生测试套件
     testunit=unittest.TestSuite()
     #使用discovery找到文件夹下的所有用例
-    discovery=unittest.defaultTestLoader.discover(allcase,pattern='QSR*.py',top_level_dir=None)#测试用例的名字是以QSR开头, top的意思是测试模块的顶层目录，即测试用例不是放在多级目录下，设置为none
+    discovery=unittest.defaultTestLoader.discover(allcase,pattern='QSR_*.py',top_level_dir=None)#测试用例的名字是以QSR开头, top的意思是测试模块的顶层目录，即测试用例不是放在多级目录下，设置为none
     for suite in discovery:
         for case in suite:
             testunit.addTest(case)
