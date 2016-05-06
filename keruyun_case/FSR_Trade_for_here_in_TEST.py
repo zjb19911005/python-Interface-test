@@ -142,7 +142,7 @@ class testFSR_here(unittest.TestCase):
 			db='calm_test',
 		)
 		cur = connect.cursor()
-		sqldata="7bf82d54146450b98070d027f3f"+self.y
+		sqldata="7bf82d54146450b98070d027f3f%s" %self.y
 		sut = cur.execute("select 1000*UNIX_TIMESTAMP(server_update_time) from trade where uuid ='%s'") %sqldata,
 		sct = cur.execute("select 1000*UNIX_TIMESTAMP(server_create_time) from trade where uuid ='%s'") %sqldata,
 		self.suttime = cur.fetchmany(sut)
