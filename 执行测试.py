@@ -22,10 +22,10 @@ def creatSuite():#产生测试套件
 
 allcasenames=creatSuite()
 
-now = time.strftime('%Y%m%d%H%M%d', time.localtime(time.time()))
+now = time.strftime('%Y-%m-%d-%H_%M_%d', time.localtime(time.time()))
 
 filename = 'C:\Users\Administrator.XYZ-PC\Desktop\TestReport\\'+now+"test_all.html"
 fp = file(filename, 'wb')
-runner = HTMLTestRunner.HTMLTestRunner(stream=fp,title=u'快餐下单测试报告',description=u'快餐下单压力测试结果')
+runner = HTMLTestRunner.HTMLTestRunner(stream=fp,title=u'快餐下单压力测试报告',description=u'快餐下单压力测试结果数据')
 runner.run(allcasenames)
 fp.close()

@@ -22,7 +22,7 @@ sys.setdefaultencoding('utf8')
 
 class testQSRtrade_Baiduwaimai(unittest.TestCase):
 	def setUp(self):#初始化文件
-		self.x=random.randint(1,2)
+		self.x=random.randint(100,200)
 		self.m=1
 	def test001(self):
 		for self.m in range(self.x):
