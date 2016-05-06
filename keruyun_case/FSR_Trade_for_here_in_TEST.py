@@ -402,8 +402,8 @@ class testFSR_here(unittest.TestCase):
 				"clientUpdateTime": self.i+100,
 				"deviceIdenty": "94:a1:a2:30:65:af",
 				"id": 1047745,
-				"serverCreateTime":json.dumps(scttime),
-				"serverUpdateTime":json.dumps(suttime),
+				"serverCreateTime":self.scttime,
+				"serverUpdateTime":self.suttime,
 				"shopIdenty": 810002790,
 				"statusFlag": 1,
 				"uuid": "%s%d"%("511edc9d1f85435ca56ae48e5a3a",self.y),
@@ -437,8 +437,8 @@ class testFSR_here(unittest.TestCase):
 			"clientUpdateTime": self.i+100,
 			"deviceIdenty": "94:a1:a2:30:65:af",
 			"id": 3354394,
-			"serverCreateTime":json.dumps(scttime),
-			"serverUpdateTime":json.dumps(suttime),
+			"serverCreateTime":self.scttime,
+			"serverUpdateTime":self.suttime,
 			"shopIdenty": 810002790,
 			"statusFlag": 1,
 			"uuid": "%s%d"%("e7bf82d54146450b98070d027f3f",self.y),
@@ -490,7 +490,7 @@ class testFSR_here(unittest.TestCase):
 		re3 = requests.post(url, data=jdata, headers=head)
 		timestr = time.strftime('%Y-%m-%d/%H：%M：%d', time.localtime(time.time()))
 		print "第%d次清台的系统时间是:" % (self.m) + timestr
-		if '操作成功' in re3.:
+		if '操作成功' in re3.text:
 			print '第%d次清台通过' % self.m
 		else:
 			print '第%d次清台失败,返回的错误信息如下:' % self.m
