@@ -12,7 +12,6 @@ import random
 import json
 import requests
 import random
-import speedtest_cli
 import unittest
 import time
 import HTMLTestRunner
@@ -142,9 +141,8 @@ class testFSR_here(unittest.TestCase):
 			db='calm_test',
 		)
 		cur = connect.cursor()
-		sqldata="7bf82d54146450b98070d027f3f%s" %self.y
-		sut = cur.execute("select 1000*UNIX_TIMESTAMP(server_update_time) from trade where uuid ='%s'") %sqldata,
-		sct = cur.execute("select 1000*UNIX_TIMESTAMP(server_create_time) from trade where uuid ='%s'") %sqldata,
+		sut = cur.execute("select 1000*UNIX_TIMESTAMP(server_update_time) from trade where trade_no ='10116050611282000%d'") %self.y,
+		sct = cur.execute("select 1000*UNIX_TIMESTAMP(server_create_time) from trade where trade_no ='10116050611282000%d'") %self.y,
 		self.suttime = cur.fetchmany(sut)
 		self.scttime = cur.fetchmany(sct)
 		print self.suttime, self.scttime
