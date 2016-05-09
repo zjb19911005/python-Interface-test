@@ -22,7 +22,7 @@ sys.setdefaultencoding('utf8')
 
 class testQSRtrade_Baiduwaimai(unittest.TestCase):
 	def setUp(self):#初始化文件
-		self.x=random.randint(100,200)
+		self.x=random.randint(1,2)
 		self.m=1
 	def test001(self):
 		for self.m in range(self.x):
@@ -181,7 +181,7 @@ class testQSRtrade_Baiduwaimai(unittest.TestCase):
 		"changed": 'true'
 	},
 	"deviceID": "94:a1:a2:30:8f:7f",
-	"shopID": 810002790,
+	"shopID": 247900001,
 	"systemType": "android",
 	"versionCode": "2110060701",
 	"versionName": "6.7.1"

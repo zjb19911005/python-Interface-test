@@ -147,13 +147,12 @@ class testFSR_here(unittest.TestCase):
 		sut = cur.execute("select 1000*UNIX_TIMESTAMP(server_update_time) from trade where uuid = '%s'" % uuid),
 		# sut = cur.execute("select 1000*UNIX_TIMESTAMP(server_update_time) from trade where uuid = 'e7bf82d54146450b98070d027f3f%s'" % self.y) ,
 		suttimes = cur.fetchall()
-		# print suttimes
 		self.suttime=str(suttimes)[11:24]
 		print self.suttime
-		sct = cur.execute("select 1000*UNIX_TIMESTAMP(server_create_time) from trade where uuid = '%s '"% uuid) ,
-		scttimes= cur.fetchone()
-		self.scttime=str(scttimes)[10:23]
-		print self.scttime
+		# sct = cur.execute("select 1000*UNIX_TIMESTAMP(server_create_time) from trade where uuid = '%s '"% uuid) ,
+		# scttimes= cur.fetchone()
+		# self.scttime=str(scttimes)[10:23]
+		# print self.scttime
 		# 传参数据
 		tradedata ={
 	"appType": "5",
@@ -176,8 +175,8 @@ class testFSR_here(unittest.TestCase):
 					"refundWay": 1,
 					"usefulAmount": 27.18,
 					"brandIdenty": 4881,
-					"clientCreateTime": self.i+100,
-					"clientUpdateTime": self.i+100,
+					"clientCreateTime": 826193664692,
+					"clientUpdateTime": 826193664692,
 					"deviceIdenty": "94:a1:a2:30:65:af",
 					"shopIdenty": 810002790,
 					"statusFlag": 1,
@@ -196,8 +195,8 @@ class testFSR_here(unittest.TestCase):
 				"updatorId": 88888930971,
 				"updatorName": "zhujb",
 				"brandIdenty": 4881,
-				"clientCreateTime": self.i,
-				"clientUpdateTime": self.i,
+				"clientCreateTime": 826193664692,
+				"clientUpdateTime": 826193664692,
 				"deviceIdenty": "94:a1:a2:30:65:af",
 				"shopIdenty": 810002790,
 				"statusFlag": 1,
@@ -221,11 +220,11 @@ class testFSR_here(unittest.TestCase):
 				"updatorId": 88888930971,
 				"updatorName": "zhujb",
 				"brandIdenty": 4881,
-				"clientCreateTime":self.i ,
-				"clientUpdateTime": self.i,
+				"clientCreateTime":826193664692 ,
+				"clientUpdateTime": 826193664692,
 				"deviceIdenty": "94:a1:a2:30:65:af",
 				"id": 3261230,
-				"serverCreateTime": self.scttime,
+				"serverCreateTime": self.suttime,
 				"serverUpdateTime": self.suttime,
 				"shopIdenty": 810002790,
 				"statusFlag": 1,
@@ -245,8 +244,8 @@ class testFSR_here(unittest.TestCase):
 				"updatorId": 88888930971,
 				"updatorName": "zhujb",
 				"brandIdenty": 4881,
-				"clientCreateTime": self.i,
-				"clientUpdateTime": self.i,
+				"clientCreateTime": 826193664692,
+				"clientUpdateTime": 826193664692,
 				"deviceIdenty": "94:a1:a2:30:65:af",
 				"shopIdenty": 810002790,
 				"statusFlag": 1,
@@ -265,8 +264,8 @@ class testFSR_here(unittest.TestCase):
 				"updatorId": 88888930971,
 				"updatorName": "zhujb",
 				"brandIdenty": 4881,
-				"clientCreateTime": self.i,
-				"clientUpdateTime": self.i,
+				"clientCreateTime": 826193664692,
+				"clientUpdateTime": 826193664692,
 				"deviceIdenty": "94:a1:a2:30:65:af",
 				"shopIdenty": 810002790,
 				"statusFlag": 1,
@@ -321,8 +320,8 @@ class testFSR_here(unittest.TestCase):
 				"updatorId": 88888930971,
 				"updatorName": "zhujb",
 				"brandIdenty": 4881,
-				"clientCreateTime": self.i,
-				"clientUpdateTime": self.i,
+				"clientCreateTime": 826193664692,
+				"clientUpdateTime": 826193664692,
 				"deviceIdenty": "94:a1:a2:30:65:af",
 				"shopIdenty": 810002790,
 				"statusFlag": 1,
@@ -381,8 +380,8 @@ class testFSR_here(unittest.TestCase):
 				"updatorId": 88888930971,
 				"updatorName": "zhujb",
 				"brandIdenty": 4881,
-				"clientCreateTime": self.i,
-				"clientUpdateTime": self.i,
+				"clientCreateTime": 826193664692,
+				"clientUpdateTime": 826193664692,
 				"deviceIdenty": "94:a1:a2:30:65:af",
 				"shopIdenty": 810002790,
 				"statusFlag": 1,
@@ -404,11 +403,11 @@ class testFSR_here(unittest.TestCase):
 				"waiterId": 0,
 				"waiterName": "zhujb",
 				"brandIdenty": 4881,
-				"clientCreateTime": self.i,
-				"clientUpdateTime": self.i,
+				"clientCreateTime": 826193664692,
+				"clientUpdateTime": 826193664692,
 				"deviceIdenty": "94:a1:a2:30:65:af",
 				"id": 1047745,
-				"serverCreateTime":self.scttime,
+				"serverCreateTime":self.suttime,
 				"serverUpdateTime":self.suttime,
 				"shopIdenty": 810002790,
 				"statusFlag": 1,
@@ -439,11 +438,11 @@ class testFSR_here(unittest.TestCase):
 			"updatorId": 88888930971,
 			"updatorName": "zhujb",
 			"brandIdenty": 4881,
-			"clientCreateTime": self.i,
-			"clientUpdateTime": self.i,
+			"clientCreateTime": 826193664692,
+			"clientUpdateTime": 826193664692,
 			"deviceIdenty": "94:a1:a2:30:65:af",
 			"id": 3354394,
-			"serverCreateTime":self.scttime,
+			"serverCreateTime":self.suttime,
 			"serverUpdateTime":self.suttime,
 			"shopIdenty": 810002790,
 			"statusFlag": 1,
@@ -474,18 +473,18 @@ class testFSR_here(unittest.TestCase):
 	# def test003_clearTable(self):
 		# for self.m in range(self.x):
 	#再次查询数据库
-		connect = MySQLdb.connect(
-			host='rdst5ai4d32fe3qd6if46public.mysql.rds.aliyuncs.com',
-			port=3306,
-			user='qgd_stf_wt_qa',
-			passwd='NPzMwpzYVobbCYBSlv6M',
-			db='calm_test',
-		)
-		cur = connect.cursor()
+		# connect = MySQLdb.connect(
+		# 	host='rdst5ai4d32fe3qd6if46public.mysql.rds.aliyuncs.com',
+		# 	port=3306,
+		# 	user='qgd_stf_wt_qa',
+		# 	passwd='NPzMwpzYVobbCYBSlv6M',
+		# 	db='calm_test',
+		# )
+		# cur = connect.cursor()
 		# sut2 = cur.execute("select 1000*UNIX_TIMESTAMP(server_update_time) from trade where trade_no ='10116050611282000%d'") % self.y,
 		sut2=cur.execute("select 1000*UNIX_TIMESTAMP(server_update_time) from trade where uuid = '%s '"% uuid) ,
 		sut2times = cur.fetchone()
-		self.sut2time = str(sut2times)[11:24]
+		self.sut2time = str(sut2times)[10:23]
 		print self.sut2time
 		# 传参数据
 		tradedata ={
