@@ -143,10 +143,10 @@ class testFSR_here(unittest.TestCase):
 		)
 		cur = connect.cursor()
 		sut = cur.execute("select 1000*UNIX_TIMESTAMP(server_update_time) from trade where uuid = 'e7bf82d54146450b98070d027f3f%s '")%self.y,
-		self.suttime = cur.fetchmany()
+		self.suttime = cur.fetchmany(sut)
 		print self.suttime
 		sct = cur.execute("select 1000*UNIX_TIMESTAMP(server_create_time) from trade where uuid = 'e7bf82d54146450b98070d027f3f%s '")%self.y,
-		self.scttime=cur.fetchmany()
+		self.scttime= cur.fetchmany(sct)
 		print self.scttime
 		# 传参数据
 		tradedata ={
