@@ -20,6 +20,7 @@ reload(sys)
 sys.setdefaultencoding('utf8')
 import MySQLdb
 
+
 class testFSR_here(unittest.TestCase):
 	def setUp(self):#初始化文件
 		self.x=random.randint(1,2)
@@ -142,11 +143,15 @@ class testFSR_here(unittest.TestCase):
 			db='calm_test',
 		)
 		cur = connect.cursor()
-		sut = cur.execute("select 1000*UNIX_TIMESTAMP(server_update_time) from trade where uuid = 'e7bf82d54146450b98070d027f3f%s '")%self.y,
-		self.suttime = cur.fetchmany(sut)
+		# sut = cur.execute("select 1000*UNIX_TIMESTAMP(server_update_time) from trade where uuid = 'e7bf82d54146450b98070d027f3f%s '")%self.y,
+		sut = cur.execute("select 1000*UNIX_TIMESTAMP(server_update_time) from trade where uuid = 'e7bf82d54146450b98070d027f3f%d '") % self.y,
+		suttimes = cur.fetchone()
+		self.suttime=str(suttimes)[10:23]
 		print self.suttime
-		sct = cur.execute("select 1000*UNIX_TIMESTAMP(server_create_time) from trade where uuid = 'e7bf82d54146450b98070d027f3f%s '")%self.y,
-		self.scttime= cur.fetchmany(sct)
+		# sct = cur.execute("select 1000*UNIX_TIMESTAMP(server_create_time) from trade where uuid = 'e7bf82d54146450b98070d027f3f%s '")%self.y,
+		sct = cur.execute("select 1000*UNIX_TIMESTAMP(server_create_time) from trade where uuid = 'e7bf82d54146450b98070d027f3f%d '") % self.y,
+		scttimes= cur.fetchone()
+		self.scttime=str(scttimes)[10:23]
 		print self.scttime
 		# 传参数据
 		tradedata ={
@@ -437,8 +442,8 @@ class testFSR_here(unittest.TestCase):
 			"clientUpdateTime": self.i+100,
 			"deviceIdenty": "94:a1:a2:30:65:af",
 			"id": 3354394,
-			"serverCreateTime":self.scttime[:13],
-			"serverUpdateTime":self.suttime[:13],
+			"serverCreateTime":self.scttime,
+			"serverUpdateTime":self.suttime,
 			"shopIdenty": 810002790,
 			"statusFlag": 1,
 			"uuid": "%s%d"%("e7bf82d54146450b98070d027f3f",self.y),
@@ -476,16 +481,17 @@ class testFSR_here(unittest.TestCase):
 			db='calm_test',
 		)
 		cur = connect.cursor()
-		sut2 = cur.execute(
-			"select 1000*UNIX_TIMESTAMP(server_update_time) from trade where trade_no ='10116050611282000%d'") % self.y,
-		self.sut2time = cur.fetchall()
+		# sut2 = cur.execute("select 1000*UNIX_TIMESTAMP(server_update_time) from trade where trade_no ='10116050611282000%d'") % self.y,
+		sut2=cur.execute("select 1000*UNIX_TIMESTAMP(server_update_time) from trade where uuid = 'e7bf82d54146450b98070d027f3f%s '") % self.y,
+		sut2times = cur.fetchone()
+		self.suttime = str(sut2times)[10:23]
 		print self.sut2time
 		# 传参数据
 		tradedata ={
 	"appType": "5",
 	"brandID": 4881,
 	"content": {
-		"serverUpdateTime": self.sut2time[:13],
+		"serverUpdateTime": self.sut2time,
 		"tableId": 4000162905,
 		"updatorId": 88888930971,
 		"updatorName": "zhujb"
