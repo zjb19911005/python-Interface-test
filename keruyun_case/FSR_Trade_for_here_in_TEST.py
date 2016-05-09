@@ -27,106 +27,107 @@ class testFSR_here(unittest.TestCase):
 		self.i = random.randint(146250530000, 1462503359999)  # 服务器时间随机传参
 		self.y = random.randint(1000, 9999)  # 订单UUID随机传参
 
-# 	def test001_dinnerSubmit(self):
-# 		# for self.m in range(self.x):
-# 			#传参数据
-# 		tradedata={
-# 	"appType": "5",
-# 	"brandID": 4881,
-# 	"content": {
-# 		"tables": [{
-# 			"id": 4000181879,
-# 			"modifyDateTime": 1461661519000,
-# 			"tableStatus": 1
-# 		}],
-# 		"tradeExtra": {
-# 			"creatorId": 88888930971,
-# 			"creatorName": "zhujb",
-# 			"deliveryPlatform": 1,
-# 			"tradeUuid": "%s%d"%("e7bf82d54146450b98070d027f3f",self.y),
-# 			"updatorId": 88888930971,
-# 			"updatorName": "zhujb",
-# 			"brandIdenty": 4881,
-# 			"clientCreateTime": self.i,
-# 			"clientUpdateTime": self.i,
-# 			"deviceIdenty": "94:a1:a2:30:65:af",
-# 			"shopIdenty": 810002790,
-# 			"statusFlag": 1,
-# 			"uuid":"%s%d"%( "464bad2502b747ea9776867645e6",self.y),
-# 			"changed": 'true'
-# 		},
-# 		"tradeItems": [],
-# 		"tradeTables": [{
-# 			"creatorId": 88888930971,
-# 			"creatorName": "zhujb",
-# 			"memo": "无",
-# 			"selfTableStatus": 1,
-# 			"tableId": 4000162905,
-# 			"tableName": "4",
-# 			"tablePeopleCount": 8,
-# 			"tradeUuid":"%s%d"%( "e7bf82d54146450b98070d027f3f",self.y),
-# 			"updatorId": 88888930971,
-# 			"updatorName": "zhujb",
-# 			"waiterId": 0,
-# 			"waiterName": "zhujb",
-# 			"brandIdenty": 4881,
-# 			"clientCreateTime": self.i,
-# 			"clientUpdateTime": self.i,
-# 			"deviceIdenty": "94:a1:a2:30:65:af",
-# 			"shopIdenty": 810002790,
-# 			"statusFlag": 1,
-# 			"uuid": "%s%d"%("511edc9d1f85435ca56ae48e5a3a",self.y),
-# 			"changed": 'true'
-# 		}],
-# 		"businessType": 2,
-# 		"creatorId": 88888930971,
-# 		"creatorName": "zhujb",
-# 		"deliveryType": 1,
-# 		"domainType": 1,
-# 		"privilegeAmount": 0,
-# 		"saleAmount": 0,
-# 		"skuKindCount": 0,
-# 		"source": 10,
-# 		"sourceChild": 1,
-# 		"tradeAmount": 0,
-# 		"tradeNo": "10116050611282000%d"%self.y,
-# 		"tradePayForm": 1,
-# 		"tradePayStatus": 1,
-# 		"tradePeopleCount": 8,
-# 		"tradeStatus": 3,
-# 		"tradeTime": 1462505300721,
-# 		"tradeType": 1,
-# 		"updatorId": 88888930971,
-# 		"updatorName": "zhujb",
-# 		"brandIdenty": 4881,
-# 		"clientCreateTime": self.i,
-# 		"clientUpdateTime": self.i,
-# 		"deviceIdenty": "94:a1:a2:30:65:af",
-# 		"shopIdenty": 810002790,
-# 		"statusFlag": 1,
-# 		"uuid": "%s%d"%("e7bf82d54146450b98070d027f3f",self.y),
-# 		"changed": 'true'
-# 	},
-# 	"deviceID": "94:a1:a2:30:65:af",
-# 	"shopID": 810002790,
-# 	"systemType": "android",
-# 	"versionCode": "2110060800",
-# 	"versionName": "6.8.0"
-# }
-# 		jdata=json.dumps(tradedata)#传参json格式化处理
-# 		head={'Content-Type':'application/json'}#json请求头
-# 		url="http://test.calm.shishike.com/CalmRouter/v1/trade/dinnerSubmit"
-# 		# self.re=requests.post("https://testcalm.shishike.com/CalmRouter/v1/trade/submit",data=jdata,headers=head)
-# 		re1 = requests.post(url, data=jdata,headers=head)
-# 		# self.m=self.m+1,
-# 		s = '操作成功'
-# 		timestr = time.strftime('%Y-%m-%d/%H：%M：%d', time.localtime(time.time()))
-# 		print "第%d次开台的系统时间是:" % (self.m) + timestr
-# 		if '操作成功' in re1.text:
-# 			print '第%d次开台通过' % self.m
-# 		else:
-# 			print '第%d次开台失败,返回的错误信息如下:' % self.m
-# 			print re1.text
+	def test001_dinnerSubmit(self):
+		# for self.m in range(self.x):
+			#传参数据
+		tradedata={
+	"appType": "5",
+	"brandID": 4881,
+	"content": {
+		"tables": [{
+			"id": 4000181879,
+			"modifyDateTime": 1461661519000,
+			"tableStatus": 1
+		}],
+		"tradeExtra": {
+			"creatorId": 88888930971,
+			"creatorName": "zhujb",
+			"deliveryPlatform": 1,
+			"tradeUuid": "%s%d"%("e7bf82d54146450b98070d027f3f",self.y),
+			"updatorId": 88888930971,
+			"updatorName": "zhujb",
+			"brandIdenty": 4881,
+			"clientCreateTime": self.i,
+			"clientUpdateTime": self.i,
+			"deviceIdenty": "94:a1:a2:30:65:af",
+			"shopIdenty": 810002790,
+			"statusFlag": 1,
+			"uuid":"%s%d"%( "464bad2502b747ea9776867645e6",self.y),
+			"changed": 'true'
+		},
+		"tradeItems": [],
+		"tradeTables": [{
+			"creatorId": 88888930971,
+			"creatorName": "zhujb",
+			"memo": "无",
+			"selfTableStatus": 1,
+			"tableId": 4000162905,
+			"tableName": "4",
+			"tablePeopleCount": 8,
+			"tradeUuid":"%s%d"%( "e7bf82d54146450b98070d027f3f",self.y),
+			"updatorId": 88888930971,
+			"updatorName": "zhujb",
+			"waiterId": 0,
+			"waiterName": "zhujb",
+			"brandIdenty": 4881,
+			"clientCreateTime": self.i,
+			"clientUpdateTime": self.i,
+			"deviceIdenty": "94:a1:a2:30:65:af",
+			"shopIdenty": 810002790,
+			"statusFlag": 1,
+			"uuid": "%s%d"%("511edc9d1f85435ca56ae48e5a3a",self.y),
+			"changed": 'true'
+		}],
+		"businessType": 2,
+		"creatorId": 88888930971,
+		"creatorName": "zhujb",
+		"deliveryType": 1,
+		"domainType": 1,
+		"privilegeAmount": 0,
+		"saleAmount": 0,
+		"skuKindCount": 0,
+		"source": 10,
+		"sourceChild": 1,
+		"tradeAmount": 0,
+		"tradeNo": "10116050611282000%d"%self.y,
+		"tradePayForm": 1,
+		"tradePayStatus": 1,
+		"tradePeopleCount": 8,
+		"tradeStatus": 3,
+		"tradeTime": 1462505300721,
+		"tradeType": 1,
+		"updatorId": 88888930971,
+		"updatorName": "zhujb",
+		"brandIdenty": 4881,
+		"clientCreateTime": self.i,
+		"clientUpdateTime": self.i,
+		"deviceIdenty": "94:a1:a2:30:65:af",
+		"shopIdenty": 810002790,
+		"statusFlag": 1,
+		"uuid": "%s%d"%("e7bf82d54146450b98070d027f3f",self.y),
+		"changed": 'true'
+	},
+	"deviceID": "94:a1:a2:30:65:af",
+	"shopID": 810002790,
+	"systemType": "android",
+	"versionCode": "2110060800",
+	"versionName": "6.8.0"
+}
+		jdata=json.dumps(tradedata)#传参json格式化处理
+		head={'Content-Type':'application/json'}#json请求头
+		url="http://test.calm.shishike.com/CalmRouter/v1/trade/dinnerSubmit"
+		# self.re=requests.post("https://testcalm.shishike.com/CalmRouter/v1/trade/submit",data=jdata,headers=head)
+		re1 = requests.post(url, data=jdata,headers=head)
+		# self.m=self.m+1,
+		s = '操作成功'
+		timestr = time.strftime('%Y-%m-%d/%H：%M：%d', time.localtime(time.time()))
+		print "第%d次开台的系统时间是:" % (self.m) + timestr
+		if '操作成功' in re1.text:
+			print '第%d次开台通过' % self.m
+			print '本次交易的UUID是：%s%d '%("e7bf82d54146450b98070d027f3f",self.y),
+		else:
+			print '第%d次开台失败,返回的错误信息如下:' % self.m
+			print re1.text
 
 
 
@@ -141,11 +142,12 @@ class testFSR_here(unittest.TestCase):
 			db='calm_test',
 		)
 		cur = connect.cursor()
-		sut = cur.execute("select 1000*UNIX_TIMESTAMP(server_update_time) from trade where trade_no ='10116050611282000%d'") %self.y,
-		sct = cur.execute("select 1000*UNIX_TIMESTAMP(server_create_time) from trade where trade_no ='10116050611282000%d'") %self.y,
-		self.suttime = cur.fetchmany(sut)
-		self.scttime = cur.fetchmany(sct)
-		print self.suttime, self.scttime
+		sut = cur.execute("select 1000*UNIX_TIMESTAMP(server_update_time) from trade where uuid = 'e7bf82d54146450b98070d027f3f%s '")%self.y,
+		self.suttime = cur.fetchmany()
+		print self.suttime
+		sct = cur.execute("select 1000*UNIX_TIMESTAMP(server_create_time) from trade where uuid = 'e7bf82d54146450b98070d027f3f%s '")%self.y,
+		self.scttime=cur.fetchmany()
+		print self.scttime
 		# 传参数据
 		tradedata ={
 	"appType": "5",
@@ -435,8 +437,8 @@ class testFSR_here(unittest.TestCase):
 			"clientUpdateTime": self.i+100,
 			"deviceIdenty": "94:a1:a2:30:65:af",
 			"id": 3354394,
-			"serverCreateTime":self.scttime,
-			"serverUpdateTime":self.suttime,
+			"serverCreateTime":self.scttime[:13],
+			"serverUpdateTime":self.suttime[:13],
 			"shopIdenty": 810002790,
 			"statusFlag": 1,
 			"uuid": "%s%d"%("e7bf82d54146450b98070d027f3f",self.y),
@@ -465,12 +467,25 @@ class testFSR_here(unittest.TestCase):
 
 	def test003_clearTable(self):
 		# for self.m in range(self.x):
+	#再次查询数据库
+		connect = MySQLdb.connect(
+			host='rdst5ai4d32fe3qd6if46public.mysql.rds.aliyuncs.com',
+			port=3306,
+			user='qgd_stf_wt_qa',
+			passwd='NPzMwpzYVobbCYBSlv6M',
+			db='calm_test',
+		)
+		cur = connect.cursor()
+		sut2 = cur.execute(
+			"select 1000*UNIX_TIMESTAMP(server_update_time) from trade where trade_no ='10116050611282000%d'") % self.y,
+		self.sut2time = cur.fetchall()
+		print self.sut2time
 		# 传参数据
 		tradedata ={
 	"appType": "5",
 	"brandID": 4881,
 	"content": {
-		"serverUpdateTime": 1440518299000,
+		"serverUpdateTime": self.sut2time[:13],
 		"tableId": 4000162905,
 		"updatorId": 88888930971,
 		"updatorName": "zhujb"
