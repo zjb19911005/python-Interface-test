@@ -26,9 +26,9 @@ sut1 = cur.execute("select 1000*UNIX_TIMESTAMP(server_create_time) from trade wh
 sut1times = cur.fetchone()
 print str(sut1times)[10:23]
 y=2054
-sut2 = cur.execute("select 1000*UNIX_TIMESTAMP(server_create_time) from trade where uuid = 'e7bf82d54146450b98070d027f3f%s'")% y,
-sut2times =cur.fetchone()
-print str(sut2times)[10:23]
+sct2 = cur.execute("select 1000*UNIX_TIMESTAMP(server_create_time) from trade where uuid = 'e7bf82d54146450b98070d027f3f%s'"% y),
+sct2times =cur.fetchone()
+print str(sct2times)[10:23]
 
 
 

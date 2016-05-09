@@ -27,7 +27,6 @@ class testFSR_here(unittest.TestCase):
 		self.m=1
 		self.i = random.randint(146250530000, 1462503359999)  # 服务器时间随机传参
 		self.y = random.randint(1000, 9999)  # 订单UUID随机传参
-
 	def test001_dinnerSubmit(self):
 		# for self.m in range(self.x):
 			#传参数据
@@ -125,14 +124,14 @@ class testFSR_here(unittest.TestCase):
 		print "第%d次开台的系统时间是:" % (self.m) + timestr
 		if '操作成功' in re1.text:
 			print '第%d次开台通过' % self.m
-			print '本次交易的UUID是：%s%d '%("e7bf82d54146450b98070d027f3f",self.y),
+			self.uuid = '%s%d ' % ("e7bf82d54146450b98070d027f3f", self.y),
+			print '本次交易的UUID是:%s' % self.uuid
 		else:
 			print '第%d次开台失败,返回的错误信息如下:' % self.m
 			print re1.text
 
 
-
-	def test002_modify_cash(self):
+	# def test002_modify_cash(self):
 		# for self.m in range(self.x):
 		#抓取数据库的severupdatetime
 		connect = MySQLdb.connect(
@@ -143,13 +142,15 @@ class testFSR_here(unittest.TestCase):
 			db='calm_test',
 		)
 		cur = connect.cursor()
-		# sut = cur.execute("select 1000*UNIX_TIMESTAMP(server_update_time) from trade where uuid = 'e7bf82d54146450b98070d027f3f%s '")%self.y,
-		sut = cur.execute("select 1000*UNIX_TIMESTAMP(server_update_time) from trade where uuid = 'e7bf82d54146450b98070d027f3f%d '") % self.y,
-		suttimes = cur.fetchone()
-		self.suttime=str(suttimes)[10:23]
+		uuid=str(self.uuid)[2:34]
+		# print uuid
+		sut = cur.execute("select 1000*UNIX_TIMESTAMP(server_update_time) from trade where uuid = '%s'" % uuid),
+		# sut = cur.execute("select 1000*UNIX_TIMESTAMP(server_update_time) from trade where uuid = 'e7bf82d54146450b98070d027f3f%s'" % self.y) ,
+		suttimes = cur.fetchall()
+		# print suttimes
+		self.suttime=str(suttimes)[11:24]
 		print self.suttime
-		# sct = cur.execute("select 1000*UNIX_TIMESTAMP(server_create_time) from trade where uuid = 'e7bf82d54146450b98070d027f3f%s '")%self.y,
-		sct = cur.execute("select 1000*UNIX_TIMESTAMP(server_create_time) from trade where uuid = 'e7bf82d54146450b98070d027f3f%d '") % self.y,
+		sct = cur.execute("select 1000*UNIX_TIMESTAMP(server_create_time) from trade where uuid = %s '"%uuid) ,
 		scttimes= cur.fetchone()
 		self.scttime=str(scttimes)[10:23]
 		print self.scttime
@@ -224,8 +225,8 @@ class testFSR_here(unittest.TestCase):
 				"clientUpdateTime": self.i+100,
 				"deviceIdenty": "94:a1:a2:30:65:af",
 				"id": 3261230,
-				"serverCreateTime": str(self.scttime)[0:13],
-				"serverUpdateTime": str(self.suttime)[0:13],
+				"serverCreateTime": self.scttime,
+				"serverUpdateTime": self.suttime,
 				"shopIdenty": 810002790,
 				"statusFlag": 1,
 				"uuid": "%s%d"%("464bad2502b747ea9776867645e6",self.y),
@@ -470,7 +471,7 @@ class testFSR_here(unittest.TestCase):
 			print '第%d次改单收银失败,返回的错误信息如下:' % self.m
 			print re2.text
 
-	def test003_clearTable(self):
+	# def test003_clearTable(self):
 		# for self.m in range(self.x):
 	#再次查询数据库
 		connect = MySQLdb.connect(
@@ -482,9 +483,9 @@ class testFSR_here(unittest.TestCase):
 		)
 		cur = connect.cursor()
 		# sut2 = cur.execute("select 1000*UNIX_TIMESTAMP(server_update_time) from trade where trade_no ='10116050611282000%d'") % self.y,
-		sut2=cur.execute("select 1000*UNIX_TIMESTAMP(server_update_time) from trade where uuid = 'e7bf82d54146450b98070d027f3f%s '") % self.y,
+		sut2=cur.execute("select 1000*UNIX_TIMESTAMP(server_update_time) from trade where uuid = '%s '"% uuid) ,
 		sut2times = cur.fetchone()
-		self.suttime = str(sut2times)[10:23]
+		self.sut2time = str(sut2times)[11:24]
 		print self.sut2time
 		# 传参数据
 		tradedata ={
