@@ -131,14 +131,16 @@ class testFSR_here(unittest.TestCase):
 			print '本次交易的UUID是:%s' % self.uuid
 			print '本次交易的流水号是：%d'%self.y
 			print re1.text
-			searchtime=re.findall('serverCreateTime":\d{13}',str(re1.text))
+			searchservertime=re.findall('serverCreateTime":\d{13}',str(re1.text))
+			# searchself.i=re.findall('"clientUpdateTime":\d{13}',str(re1.text))
 			searchid=re.findall('"tradeId":\d{7}',str(re1.text))
 			# print searchtime
 			# print searchid[0][11:17]
-			tradetablesut=int(searchtime[0][18:])#各种数据切片
-			tradesut=int(searchtime[1][18:])
-			tradeextrasut=int(searchtime[2][18:])
-			tradestatuslogs=int(searchtime[3][18:])
+
+			tradetablesut=int(searchservertime[0][18:])#各种数据切片
+			tradesut=int(searchservertime[1][18:])
+			tradeextrasut=int(searchservertime[2][18:])
+			tradestatuslogs=int(searchservertime[3][18:])
 			tradeid=int(searchid[0][11:17])
 			print tradetablesut,tradesut,tradeextrasut,tradestatuslogs,tradeid
 			# print '订单改单收银前服务器最新更新时间是：%s'% self.suttime
@@ -169,8 +171,8 @@ class testFSR_here(unittest.TestCase):
 					"refundWay": 1,
 					"usefulAmount": 27.18,
 					"brandIdenty": 4881,
-					"clientCreateTime": 826193664692,
-					"clientUpdateTime": 826193664692,
+					"clientCreateTime": self.i,
+					"clientUpdateTime": self.i,
 					"deviceIdenty": "94:a1:a2:30:65:af",
 					"shopIdenty": 810002790,
 					"statusFlag": 1,
@@ -189,8 +191,8 @@ class testFSR_here(unittest.TestCase):
 				"updatorId": 88888930971,
 				"updatorName": "zhujb",
 				"brandIdenty": 4881,
-				"clientCreateTime": 826193664692,
-				"clientUpdateTime": 826193664692,
+				"clientCreateTime": self.i,
+				"clientUpdateTime": self.i,
 				"deviceIdenty": "94:a1:a2:30:65:af",
 				"shopIdenty": 810002790,
 				"statusFlag": 1,
@@ -214,8 +216,8 @@ class testFSR_here(unittest.TestCase):
 				"updatorId": 88888930971,
 				"updatorName": "zhujb",
 				"brandIdenty": 4881,
-				"clientCreateTime":826193664692 ,
-				"clientUpdateTime": 826193664692,
+				"clientCreateTime":self.i ,
+				"clientUpdateTime": self.i,
 				"deviceIdenty": "94:a1:a2:30:65:af",
 				"id": 3261230,
 				"serverCreateTime": tradeextrasut,
@@ -238,8 +240,8 @@ class testFSR_here(unittest.TestCase):
 				"updatorId": 88888930971,
 				"updatorName": "zhujb",
 				"brandIdenty": 4881,
-				"clientCreateTime": 826193664692,
-				"clientUpdateTime": 826193664692,
+				"clientCreateTime": self.i,
+				"clientUpdateTime": self.i,
 				"deviceIdenty": "94:a1:a2:30:65:af",
 				"shopIdenty": 810002790,
 				"statusFlag": 1,
@@ -258,8 +260,8 @@ class testFSR_here(unittest.TestCase):
 				"updatorId": 88888930971,
 				"updatorName": "zhujb",
 				"brandIdenty": 4881,
-				"clientCreateTime": 826193664692,
-				"clientUpdateTime": 826193664692,
+				"clientCreateTime": self.i,
+				"clientUpdateTime": self.i,
 				"deviceIdenty": "94:a1:a2:30:65:af",
 				"shopIdenty": 810002790,
 				"statusFlag": 1,
@@ -314,8 +316,8 @@ class testFSR_here(unittest.TestCase):
 				"updatorId": 88888930971,
 				"updatorName": "zhujb",
 				"brandIdenty": 4881,
-				"clientCreateTime": 826193664692,
-				"clientUpdateTime": 826193664692,
+				"clientCreateTime": self.i,
+				"clientUpdateTime": self.i,
 				"deviceIdenty": "94:a1:a2:30:65:af",
 				"shopIdenty": 810002790,
 				"statusFlag": 1,
@@ -374,8 +376,8 @@ class testFSR_here(unittest.TestCase):
 				"updatorId": 88888930971,
 				"updatorName": "zhujb",
 				"brandIdenty": 4881,
-				"clientCreateTime": 826193664692,
-				"clientUpdateTime": 826193664692,
+				"clientCreateTime": self.i,
+				"clientUpdateTime": self.i,
 				"deviceIdenty": "94:a1:a2:30:65:af",
 				"shopIdenty": 810002790,
 				"statusFlag": 1,
@@ -397,8 +399,8 @@ class testFSR_here(unittest.TestCase):
 				"waiterId": 0,
 				"waiterName": "zhujb",
 				"brandIdenty": 4881,
-				"clientCreateTime": 826193664692,
-				"clientUpdateTime": 826193664692,
+				"clientCreateTime": self.i,
+				"clientUpdateTime": self.i,
 				"deviceIdenty": "94:a1:a2:30:65:af",
 				"id": 1047745,
 				"serverCreateTime":tradetablesut,
@@ -432,8 +434,8 @@ class testFSR_here(unittest.TestCase):
 			"updatorId": 88888930971,
 			"updatorName": "zhujb",
 			"brandIdenty": 4881,
-			"clientCreateTime": 826193664692,
-			"clientUpdateTime": 826193664692,
+			"clientCreateTime": self.i,
+			"clientUpdateTime": self.i,
 			"deviceIdenty": "94:a1:a2:30:65:af",
 			"id": tradeid,
 			"serverCreateTime":tradesut,
