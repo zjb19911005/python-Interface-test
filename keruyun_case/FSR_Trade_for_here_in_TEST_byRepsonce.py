@@ -130,8 +130,16 @@ class testFSR_here(unittest.TestCase):
 			self.uuid = '%s%d ' % ("e7bf82d54146450b98070d027f3f", self.y),
 			print '本次交易的UUID是:%s' % self.uuid
 			print '本次交易的流水号是：%d'%self.y
-			self.suttime=re.search('serverCreateTime":\d{12}',str(re1.text)).group()[18:]#正则表达式查询后切片读取数据
-			print '订单改单收银前服务器最新更新时间是：%s'% self.suttime
+			print re1.text
+			search=re.findall('serverCreateTime":\d{13}',str(re1.text))
+			# self.suttime=re.search('serverCreateTime":\d{13}',str(re1.text)).group(2)[18:]#正则表达式查询后切片读取数据
+			tradetablesut=int(search[0][18:])#各种数据切片
+			tradesut=int(search[1][18:])
+			tradeextrasut=int(search[2][18:])
+			tradestatuslogs=int(search[3][18:])
+			print tradetablesut,tradesut,tradeextrasut,tradestatuslogs
+			# print '订单改单收银前服务器最新更新时间是：%s'% self.suttime
+
 		else:
 			print '第%d次开台失败,返回的错误信息如下:' % self.m
 			print re1.text
@@ -207,8 +215,8 @@ class testFSR_here(unittest.TestCase):
 				"clientUpdateTime": 826193664692,
 				"deviceIdenty": "94:a1:a2:30:65:af",
 				"id": 3261230,
-				"serverCreateTime": self.suttime,
-				"serverUpdateTime": self.suttime,
+				"serverCreateTime": tradeextrasut,
+				"serverUpdateTime": tradeextrasut,
 				"shopIdenty": 810002790,
 				"statusFlag": 1,
 				"uuid": "%s%d"%("464bad2502b747ea9776867645e6",self.y),
@@ -390,8 +398,8 @@ class testFSR_here(unittest.TestCase):
 				"clientUpdateTime": 826193664692,
 				"deviceIdenty": "94:a1:a2:30:65:af",
 				"id": 1047745,
-				"serverCreateTime":self.suttime,
-				"serverUpdateTime":self.suttime,
+				"serverCreateTime":tradetablesut,
+				"serverUpdateTime":tradetablesut,
 				"shopIdenty": 810002790,
 				"statusFlag": 1,
 				"uuid": "%s%d"%("511edc9d1f85435ca56ae48e5a3a",self.y),
@@ -425,8 +433,8 @@ class testFSR_here(unittest.TestCase):
 			"clientUpdateTime": 826193664692,
 			"deviceIdenty": "94:a1:a2:30:65:af",
 			"id": 3354394,
-			"serverCreateTime":self.suttime,
-			"serverUpdateTime":self.suttime,
+			"serverCreateTime":tradesut,
+			"serverUpdateTime":tradesut,
 			"shopIdenty": 810002790,
 			"statusFlag": 1,
 			"uuid": "%s%d"%("e7bf82d54146450b98070d027f3f",self.y),
@@ -448,7 +456,7 @@ class testFSR_here(unittest.TestCase):
 		print "第%d次改单收银的系统时间是:" % (self.m) + timestr
 		if '操作成功' in re2.text:
 			print '第%d次改单收银通过' % self.m
-			self.sut2time = re.search('serverCreateTime":\d{12}', str(re2.text)).group()[18:]  # 正则表达式查询后切片读取数据
+			self.sut2time = re.search('serverCreateTime":\d{13}', str(re2.text)).group(1)[18:]  # 正则表达式查询后切片读取数据
 			print '桌台清台前服务器最新更新时间是：%s' % self.sut2time
 		else:
 			print '第%d次改单收银失败,返回的错误信息如下:' % self.m
