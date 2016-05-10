@@ -126,6 +126,7 @@ class testFSR_here(unittest.TestCase):
 			print '第%d次开台通过' % self.m
 			self.uuid = '%s%d ' % ("e7bf82d54146450b98070d027f3f", self.y),
 			print '本次交易的UUID是:%s' % self.uuid
+			print '本次交易的流水号是：%d'%self.y
 		else:
 			print '第%d次开台失败,返回的错误信息如下:' % self.m
 			print re1.text
@@ -148,7 +149,7 @@ class testFSR_here(unittest.TestCase):
 		# sut = cur.execute("select 1000*UNIX_TIMESTAMP(server_update_time) from trade where uuid = 'e7bf82d54146450b98070d027f3f%s'" % self.y) ,
 		suttimes = cur.fetchall()
 		self.suttime=str(suttimes)[11:24]
-		print self.suttime
+		print '查询出的当前订单服务器的server_update time的是：%s'%self.suttime
 		# sct = cur.execute("select 1000*UNIX_TIMESTAMP(server_create_time) from trade where uuid = '%s '"% uuid) ,
 		# scttimes= cur.fetchone()
 		# self.scttime=str(scttimes)[10:23]
@@ -214,7 +215,7 @@ class testFSR_here(unittest.TestCase):
 				"creatorName": "zhujb",
 				"deliveryPlatform": 1,
 				"deliveryStatus": 0,
-				"serialNumber": "4",
+				"serialNumber": "%d" %self.y,
 				"tradeId": 3354394,
 				"tradeUuid": "%s%d"%("e7bf82d54146450b98070d027f3f",self.y),
 				"updatorId": 88888930971,
