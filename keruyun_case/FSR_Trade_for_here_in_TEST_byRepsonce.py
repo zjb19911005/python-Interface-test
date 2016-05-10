@@ -19,6 +19,7 @@ import sys
 reload(sys)
 sys.setdefaultencoding('utf8')
 import MySQLdb
+import re
 
 
 class testFSR_here(unittest.TestCase):
@@ -122,38 +123,19 @@ class testFSR_here(unittest.TestCase):
 		s = '操作成功'
 		timestr = time.strftime('%Y-%m-%d/%H：%M：%d', time.localtime(time.time()))
 		print "第%d次开台的系统时间是:" % (self.m) + timestr
+		print '.'
 		if '操作成功' in re1.text:
 			print '第%d次开台通过' % self.m
+			print '.'
 			self.uuid = '%s%d ' % ("e7bf82d54146450b98070d027f3f", self.y),
 			print '本次交易的UUID是:%s' % self.uuid
 			print '本次交易的流水号是：%d'%self.y
+			self.suttime=re.search('serverCreateTime":\d{12}',str(re1.text)).group()[18:]#正则表达式查询后切片读取数据
+			print '订单改单收银前服务器最新更新时间是：%s'% self.suttime
 		else:
 			print '第%d次开台失败,返回的错误信息如下:' % self.m
 			print re1.text
 
-
-	# def test002_modify_cash(self):
-		# for self.m in range(self.x):
-		#抓取数据库的severupdatetime
-		connect = MySQLdb.connect(
-			host='rdst5ai4d32fe3qd6if46public.mysql.rds.aliyuncs.com',
-			port=3306,
-			user='qgd_stf_wt_qa',
-			passwd='NPzMwpzYVobbCYBSlv6M',
-			db='calm_test',
-		)
-		cur = connect.cursor()
-		uuid=str(self.uuid)[2:34]
-		# print uuid
-		sut = cur.execute("select 1000*UNIX_TIMESTAMP(server_update_time) from trade where uuid = '%s'" % uuid),
-		# sut = cur.execute("select 1000*UNIX_TIMESTAMP(server_update_time) from trade where uuid = 'e7bf82d54146450b98070d027f3f%s'" % self.y) ,
-		suttimes = cur.fetchall()
-		self.suttime=str(suttimes)[11:24]
-		print '查询出的当前订单服务器的server_update time的是：%s'%self.suttime
-		# sct = cur.execute("select 1000*UNIX_TIMESTAMP(server_create_time) from trade where uuid = '%s '"% uuid) ,
-		# scttimes= cur.fetchone()
-		# self.scttime=str(scttimes)[10:23]
-		# print self.scttime
 		# 传参数据
 		tradedata ={
 	"appType": "5",
@@ -462,31 +444,16 @@ class testFSR_here(unittest.TestCase):
 		url = "http://test.calm.shishike.com/CalmRouter/v1/trade/modify+cash"
 		# self.re=requests.post("https://testcalm.shishike.com/CalmRouter/v1/trade/submit",data=jdata,headers=head)
 		re2 = requests.post(url, data=jdata, headers=head)
-
 		timestr = time.strftime('%Y-%m-%d/%H：%M：%d', time.localtime(time.time()))
 		print "第%d次改单收银的系统时间是:" % (self.m) + timestr
 		if '操作成功' in re2.text:
 			print '第%d次改单收银通过' % self.m
+			self.sut2time = re.search('serverCreateTime":\d{12}', str(re2.text)).group()[18:]  # 正则表达式查询后切片读取数据
+			print '桌台清台前服务器最新更新时间是：%s' % self.sut2time
 		else:
 			print '第%d次改单收银失败,返回的错误信息如下:' % self.m
 			print re2.text
 
-	# def test003_clearTable(self):
-		# for self.m in range(self.x):
-	#再次查询数据库
-		# connect = MySQLdb.connect(
-		# 	host='rdst5ai4d32fe3qd6if46public.mysql.rds.aliyuncs.com',
-		# 	port=3306,
-		# 	user='qgd_stf_wt_qa',
-		# 	passwd='NPzMwpzYVobbCYBSlv6M',
-		# 	db='calm_test',
-		# )
-		# cur = connect.cursor()
-		# sut2 = cur.execute("select 1000*UNIX_TIMESTAMP(server_update_time) from trade where trade_no ='10116050611282000%d'") % self.y,
-		sut2=cur.execute("select 1000*UNIX_TIMESTAMP(server_update_time) from trade where uuid = '%s '"% uuid) ,
-		sut2times = cur.fetchone()
-		self.sut2time = str(sut2times)[10:23]
-		print self.sut2time
 		# 传参数据
 		tradedata ={
 	"appType": "5",
