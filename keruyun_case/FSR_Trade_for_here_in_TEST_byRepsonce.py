@@ -131,13 +131,16 @@ class testFSR_here(unittest.TestCase):
 			print '本次交易的UUID是:%s' % self.uuid
 			print '本次交易的流水号是：%d'%self.y
 			print re1.text
-			search=re.findall('serverCreateTime":\d{13}',str(re1.text))
-			# self.suttime=re.search('serverCreateTime":\d{13}',str(re1.text)).group(2)[18:]#正则表达式查询后切片读取数据
-			tradetablesut=int(search[0][18:])#各种数据切片
-			tradesut=int(search[1][18:])
-			tradeextrasut=int(search[2][18:])
-			tradestatuslogs=int(search[3][18:])
-			print tradetablesut,tradesut,tradeextrasut,tradestatuslogs
+			searchtime=re.findall('serverCreateTime":\d{13}',str(re1.text))
+			searchid=re.findall('"tradeId":\d{7}',str(re1.text))
+			# print searchtime
+			# print searchid[0][11:17]
+			tradetablesut=int(searchtime[0][18:])#各种数据切片
+			tradesut=int(searchtime[1][18:])
+			tradeextrasut=int(searchtime[2][18:])
+			tradestatuslogs=int(searchtime[3][18:])
+			tradeid=int(searchid[0][11:17])
+			print tradetablesut,tradesut,tradeextrasut,tradestatuslogs,tradeid
 			# print '订单改单收银前服务器最新更新时间是：%s'% self.suttime
 
 		else:
@@ -181,7 +184,7 @@ class testFSR_here(unittest.TestCase):
 				"isPaid": 1,
 				"paymentType": 1,
 				"receivableAmount": 27.18,
-				"relateId": 3354394,
+				"relateId": tradeid,
 				"relateUuid": "%s%d"%("e7bf82d54146450b98070d027f3f",self.y),
 				"updatorId": 88888930971,
 				"updatorName": "zhujb",
@@ -206,7 +209,7 @@ class testFSR_here(unittest.TestCase):
 				"deliveryPlatform": 1,
 				"deliveryStatus": 0,
 				"serialNumber": "%d" %self.y,
-				"tradeId": 3354394,
+				"tradeId": tradeid,
 				"tradeUuid": "%s%d"%("e7bf82d54146450b98070d027f3f",self.y),
 				"updatorId": 88888930971,
 				"updatorName": "zhujb",
@@ -281,7 +284,7 @@ class testFSR_here(unittest.TestCase):
 				"skuName": "糖醋排骨",
 				"skuUuid": "4f9cdc3c05bf41d0b6bf4dfd3889031a",
 				"sort": 0,
-				"tradeId": 3354394,
+				"tradeId": tradeid,
 				"tradeTableId": 1047823,
 				"tradeTableUuid": "%s%d"%("511edc9d1f85435ca56ae48e5a3a",self.y),
 				"tradeUuid": "%s%d"%("e7bf82d54146450b98070d027f3f",self.y),
@@ -306,7 +309,7 @@ class testFSR_here(unittest.TestCase):
 				"privilegeType": 12,
 				"privilegeValue": 2.00,
 				"promoId": 16427,
-				"tradeId": 3354394,
+				"tradeId": tradeid,
 				"tradeUuid": "%s%d"%("e7bf82d54146450b98070d027f3f",self.y),
 				"updatorId": 88888930971,
 				"updatorName": "zhujb",
@@ -326,7 +329,7 @@ class testFSR_here(unittest.TestCase):
 				"privilegeType": 12,
 				"privilegeValue": 1.11,
 				"promoId": 16431,
-				"tradeId": 3354394,
+				"tradeId": tradeid,
 				"tradeUuid": "%s%d"%("e7bf82d54146450b98070d027f3f",self.y),
 				"updatorId": 88888930971,
 				"updatorName": "zhujb",
@@ -346,7 +349,7 @@ class testFSR_here(unittest.TestCase):
 				"privilegeType": 12,
 				"privilegeValue": 2.00,
 				"promoId": 16408,
-				"tradeId": 3354394,
+				"tradeId": tradeid,
 				"tradeUuid":"%s%d"%( "e7bf82d54146450b98070d027f3f",self.y),
 				"updatorId": 88888930971,
 				"updatorName": "zhujb",
@@ -366,7 +369,7 @@ class testFSR_here(unittest.TestCase):
 				"privilegeType": 12,
 				"privilegeValue": 0.07,
 				"promoId": 16548,
-				"tradeId": 3354394,
+				"tradeId": tradeid,
 				"tradeUuid": "%s%d"%("e7bf82d54146450b98070d027f3f",self.y),
 				"updatorId": 88888930971,
 				"updatorName": "zhujb",
@@ -387,7 +390,7 @@ class testFSR_here(unittest.TestCase):
 				"tableId": 4000162905,
 				"tableName": "4",
 				"tablePeopleCount": self.y,
-				"tradeId": 3354394,
+				"tradeId": tradeid,
 				"tradeUuid": "%s%d"%("e7bf82d54146450b98070d027f3f",self.y),
 				"updatorId": 88888930971,
 				"updatorName": "zhujb",
@@ -432,7 +435,7 @@ class testFSR_here(unittest.TestCase):
 			"clientCreateTime": 826193664692,
 			"clientUpdateTime": 826193664692,
 			"deviceIdenty": "94:a1:a2:30:65:af",
-			"id": 3354394,
+			"id": tradeid,
 			"serverCreateTime":tradesut,
 			"serverUpdateTime":tradesut,
 			"shopIdenty": 810002790,
