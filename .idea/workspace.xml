@@ -4,7 +4,6 @@
     <list default="true" id="07c322fe-3b16-41a2-b96f-eb469f580d28" name="Default" comment="开始APPium的UI自动化&#10;&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/On_POS_case/loginandlogout.py" afterPath="$PROJECT_DIR$/On_POS_case/loginandlogout.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/执行测试.py" afterPath="$PROJECT_DIR$/执行测试.py" />
     </list>
     <ignored path="python-Interface-test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,8 +37,8 @@
       <file leaf-file-name="loginandlogout.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/On_POS_case/loginandlogout.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="54" column="55" selection-start-line="54" selection-start-column="55" selection-end-line="54" selection-end-column="55" />
+            <state relative-caret-position="-593">
+              <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
               <folding>
                 <element signature="e#46#61#0" expanded="true" />
               </folding>
@@ -101,10 +100,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="1592" />
     <option name="y" value="-8" />
-    <option name="width" value="1616" />
-    <option name="height" value="876" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -468,13 +467,6 @@
       <option name="presentableId" value="Default" />
       <updated>1461665313765</updated>
     </task>
-    <task id="LOCAL-00003" summary="快餐订单压力测试">
-      <created>1461750295359</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1461750295359</updated>
-    </task>
     <task id="LOCAL-00004" summary="快餐订单压力测试,修改测试数据">
       <created>1461750483707</created>
       <option name="number" value="00004" />
@@ -811,19 +803,17 @@
       <option name="project" value="LOCAL" />
       <updated>1463034843195</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="开始APPium的UI自动化&#10;&#10;">
+      <created>1463043291082</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1463043291082</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_loginandlogout - 2016.05.12 at 16h 08m 31s.xml">
-      <configuration name="Unittests in loginandlogout" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_loginandlogout - 2016.05.12 at 16h 10m 31s.xml">
-      <configuration name="Unittests in loginandlogout" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_loginandlogout - 2016.05.12 at 16h 17m 44s.xml">
-      <configuration name="Unittests in loginandlogout" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_loginandlogout - 2016.05.12 at 16h 18m 40s.xml">
       <configuration name="Unittests in loginandlogout" configurationId="tests" />
     </history-entry>
@@ -845,18 +835,27 @@
     <history-entry file="Unittests_in_loginandlogout - 2016.05.12 at 16h 54m 26s.xml">
       <configuration name="Unittests in loginandlogout" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_loginandlogout - 2016.05.12 at 16h 57m 05s.xml">
+      <configuration name="Unittests in loginandlogout" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_loginandlogout - 2016.05.12 at 17h 00m 06s.xml">
+      <configuration name="Unittests in loginandlogout" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_loginandlogout - 2016.05.12 at 17h 03m 21s.xml">
+      <configuration name="Unittests in loginandlogout" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="1592" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30038023" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41495124" sideWeight="0.09272919" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.49789253" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38761777" sideWeight="0.9072708" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.312026" sideWeight="0.9072708" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1302,8 +1301,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/On_POS_case/loginandlogout.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="54" column="55" selection-start-line="54" selection-start-column="55" selection-end-line="54" selection-end-column="55" />
+        <state relative-caret-position="-593">
+          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
           <folding>
             <element signature="e#46#61#0" expanded="true" />
           </folding>

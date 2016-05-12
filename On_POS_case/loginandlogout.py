@@ -17,74 +17,73 @@ class loginandlogout(unittest.TestCase):
         self.desired_caps['appPackage'] = 'com.shishike.calm'
         self.desired_caps['appActivity'] = '.calmlauncher.CalmHomeActivity_'
 
-    def test_login(self):
-        self.driver = webdriver.Remote('http://localhost:4723/wd/hub',self.desired_caps)#默认写法
-        def timewait(int):
-            self.driver.implicitly_wait(int)
 
-        timewait(50)
+    def test_login(self):
+        self.driver = webdriver.Remote('http://localhost:4723/wd/hub', self.desired_caps)  # 默认写法
+
+        self.driver.implicitly_wait(50)
         self.driver.switch_to_alert()
 
         self.driver.find_element_by_id('com.shishike.calm:id/negative_button').click()
-        timewait(1)
+        self.driver.implicitly_wait(1)
         #下面就开始找元素找点了
         self.driver.find_element_by_name('admin').click()
-        timewait(1)
+        self.driver.implicitly_wait(1)
         x=1
         for x in range(6):
             self.driver.find_element_by_id('com.shishike.calm:id/eight').click()
-            timewait(1)
+            self.driver.implicitly_wait(1)
             x=x+1
-
         self.driver.find_element_by_xpath("//android.widget.GridView[1]/android.widget.LinearLayout[2]/android.widget.ImageView[1]").click()
 
-        timewait(1)
+        self.driver.implicitly_wait(1)
 
         # try:
             # self.driver.find_element_by_xpath("//android.view.View[1]/android.widget.LinearLayout[1]/android.support.v4.view.ViewPager[1]/android.widget.GridView[1]/android.widget.FrameLayout[9]").click()
         self.driver.find_element_by_xpath("//android.widget.TextView[contains(@text,'麻婆豆腐')]").click()
-        timewait(10)
+        self.driver.implicitly_wait(10)
         # except:
         #     pass
 
         self.driver.find_element_by_id('com.shishike.calm:id/btn_order_dish_right_cash').click()
-        timewait(10)
+        self.driver.implicitly_wait(10)
 
         self.driver.find_element_by_name('扫码').click()
-        timewait(10)
+        self.driver.implicitly_wait(10)
         self.driver.find_element_by_name('二维码').click()
-        timewait(20)
+        self.driver.implicitly_wait(20)
 
         self.driver.find_element_by_id('com.shishike.calm:id/pay_back').click()
-        timewait(3)
+        self.driver.implicitly_wait(3)
 
         self.driver.find_element_by_id('com.shishike.calm:id/cashier_title_bar_menu_btn').click()
-        timewait(3)
+        self.driver.implicitly_wait(3)
 
         self.driver.find_element_by_id('com.shishike.calm:id/ordercenter').click()
-        timewait(3)
+        self.driver.implicitly_wait(3)
 
         self.driver.find_element_by_id('com.shishike.calm:id/un_payment').click()
-        timewait(3)
+        self.driver.implicitly_wait(3)
 
         self.driver.find_element_by_id('com.shishike.calm:id/unpay_order_detail_un_use').click()
-        timewait(3)
+        self.driver.implicitly_wait(3)
 
 
         self.driver.switch_to_alert()
-        timewait(3)
+        self.driver.implicitly_wait(3)
 
         self.driver.find_element_by_name('作废').click()
-        timewait(3)
+        self.driver.implicitly_wait(3)
 
 
         self.driver.find_element_by_id('com.shishike.calm:id/cashier_title_bar_menu_btn').click()
-        timewait(3)
+        self.driver.implicitly_wait(3)
 
         self.driver.find_element_by_id('com.shishike.calm:id/orderdishes').click()
-        timewait(3)
+        self.driver.implicitly_wait(3)
 
     def tearDown(self):
+
         self.driver.quit()
 #添加用例执行脚本
 if __name__ == "__main__":
