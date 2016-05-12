@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07c322fe-3b16-41a2-b96f-eb469f580d28" name="Default" comment="开始APPium的UI自动化&#10;&#10;">
+    <list default="true" id="07c322fe-3b16-41a2-b96f-eb469f580d28" name="Default" comment="开始APPium的UI自动化,添加第一条下单用例&#10;&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/On_POS_case/loginandlogout.py" afterPath="$PROJECT_DIR$/On_POS_case/loginandlogout.py" />
     </list>
@@ -37,8 +37,8 @@
       <file leaf-file-name="loginandlogout.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/On_POS_case/loginandlogout.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-593">
-              <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+            <state relative-caret-position="148">
+              <caret line="53" column="38" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
               <folding>
                 <element signature="e#46#61#0" expanded="true" />
               </folding>
@@ -467,13 +467,6 @@
       <option name="presentableId" value="Default" />
       <updated>1461665313765</updated>
     </task>
-    <task id="LOCAL-00004" summary="快餐订单压力测试,修改测试数据">
-      <created>1461750483707</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1461750483707</updated>
-    </task>
     <task id="LOCAL-00005" summary="快餐订单压力测试,修改测试数据">
       <created>1461752291297</created>
       <option name="number" value="00005" />
@@ -810,13 +803,17 @@
       <option name="project" value="LOCAL" />
       <updated>1463043291082</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="开始APPium的UI自动化,添加第一条下单用例&#10;&#10;">
+      <created>1463043906108</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1463043906108</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_loginandlogout - 2016.05.12 at 16h 18m 40s.xml">
-      <configuration name="Unittests in loginandlogout" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_loginandlogout - 2016.05.12 at 16h 19m 11s.xml">
       <configuration name="Unittests in loginandlogout" configurationId="tests" />
     </history-entry>
@@ -842,6 +839,9 @@
       <configuration name="Unittests in loginandlogout" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_in_loginandlogout - 2016.05.12 at 17h 03m 21s.xml">
+      <configuration name="Unittests in loginandlogout" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_loginandlogout - 2016.05.12 at 17h 05m 37s.xml">
       <configuration name="Unittests in loginandlogout" configurationId="tests" />
     </history-entry>
   </component>
@@ -922,7 +922,8 @@
     <MESSAGE value="添加了Online" />
     <MESSAGE value="添加了Wxpython模块&#10;" />
     <MESSAGE value="开始APPium的UI自动化&#10;&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="开始APPium的UI自动化&#10;&#10;" />
+    <MESSAGE value="开始APPium的UI自动化,添加第一条下单用例&#10;&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="开始APPium的UI自动化,添加第一条下单用例&#10;&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1301,8 +1302,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/On_POS_case/loginandlogout.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-593">
-          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+        <state relative-caret-position="148">
+          <caret line="53" column="38" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
           <folding>
             <element signature="e#46#61#0" expanded="true" />
           </folding>

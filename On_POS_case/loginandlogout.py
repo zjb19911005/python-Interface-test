@@ -51,7 +51,7 @@ class loginandlogout(unittest.TestCase):
         self.driver.find_element_by_name('扫码').click()
         self.driver.implicitly_wait(10)
         self.driver.find_element_by_name('二维码').click()
-        self.driver.implicitly_wait(20)
+        self.driver.implicitly_wait(50)
 
         self.driver.find_element_by_id('com.shishike.calm:id/pay_back').click()
         self.driver.implicitly_wait(3)
