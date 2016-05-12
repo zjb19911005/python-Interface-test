@@ -1,33 +1,26 @@
 #coding=utf-8
 _author__ = 'Junior'
 #建立一个多线程去监控自动化页面的状态
-import threading
+import thread
+import time
 
-class exit_or_not():
+# 为线程定义一个函数
+def print_time( threadName, delay):
+   count = 0
+   while count < 5:
+      time.sleep(delay)
+      count += 1
+      print "%s: %s" % ( threadName, time.ctime(time.time()) )
 
+# 创建两个线程
+try:
+   thread.start_new_thread( print_time, ("Thread-1", 2, ) )
+   thread.start_new_thread( print_time, ("Thread-2", 4, ) )
+except:
+   print "Error: unable to start thread"
 
-
-    def is_print_or_not(self):
-        try:
-            self.driver.find_element_by_name('admin')
-            return True
-        except:
-            return False
-
-    thread = []
-    t1 = threading.Thread(target=is_print_or_not)
-    thread.append(t1)
-    if __name__ == '__main__':
-        t1.setDaemon(True)
-        t1.start()
-    # def  start(is_print_or_not):
-    #     thread = []
-    #     t1 = threading.Thread(target=is_print_or_not)
-    #     thread.append(t1)
-    #     if __name__ == '__main__':
-    #         t1.setDaemon(True)
-    #         t1.start()
-
+while 1:
+   pass
 
 
 
