@@ -22,7 +22,7 @@ sys.setdefaultencoding('utf8')
 
 class testQSRtrade_Wechat(unittest.TestCase):
 	def setUp(self):#初始化文件
-		self.x=random.randint(500,550)
+		self.x=random.randint(1,2)
 		self.m=1
 	def test001(self):
 		for m in range(self.x):
