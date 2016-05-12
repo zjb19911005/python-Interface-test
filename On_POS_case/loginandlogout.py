@@ -21,7 +21,7 @@ class loginandlogout(unittest.TestCase):
     def test_login(self):
         self.driver = webdriver.Remote('http://localhost:4723/wd/hub', self.desired_caps)  # 默认写法
 
-        self.driver.implicitly_wait(50)
+        self.driver.implicitly_wait(20)
         self.driver.switch_to_alert()
         # 下面就开始找元素找点了
 
@@ -74,10 +74,7 @@ class loginandlogout(unittest.TestCase):
         self.driver.implicitly_wait(3)
 
 
-        self.driver.switch_to_alert()
-        self.driver.implicitly_wait(3)
-
-        self.driver.find_element_by_name('作废').click()
+        self.driver.find_element_by_id('com.shishike.calm:id/btn_ok').click()
         self.driver.implicitly_wait(3)
 
 
