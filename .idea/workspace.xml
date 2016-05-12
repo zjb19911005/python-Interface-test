@@ -1,21 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07c322fe-3b16-41a2-b96f-eb469f580d28" name="Default" comment="添加了Wxpython模块&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/On_POS_case/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/On_POS_case/loginandlogout.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+    <list default="true" id="07c322fe-3b16-41a2-b96f-eb469f580d28" name="Default" comment="开始APPium的UI自动化&#10;&#10;">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/On_POS_case/loginandlogout.py" afterPath="$PROJECT_DIR$/On_POS_case/loginandlogout.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/执行测试.py" afterPath="$PROJECT_DIR$/执行测试.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/keruyun_case/FSR_Trade_for_here_in_TEST_byRepsonce.py" afterPath="$PROJECT_DIR$/ON_Interface_Case/FSR_Trade_for_here_in_TEST_byRepsonce.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/keruyun_case/FSR_Trade_for_here_in_TEST_bySQL.py" afterPath="$PROJECT_DIR$/ON_Interface_Case/FSR_Trade_for_here_in_TEST_bySQL.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/keruyun_case/QSR_Trade_for_BaiduWaimai_in_TEST.py" afterPath="$PROJECT_DIR$/ON_Interface_Case/QSR_Trade_for_BaiduWaimai_in_TEST.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/keruyun_case/QSR_Trade_for_Wechat_in_Online.py" afterPath="$PROJECT_DIR$/ON_Interface_Case/QSR_Trade_for_Wechat_in_Online.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/keruyun_case/QSR_Trade_for_Wechat_in_TEST.py" afterPath="$PROJECT_DIR$/ON_Interface_Case/QSR_Trade_for_Wechat_in_TEST.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/keruyun_case/QSR_Trade_for_here_in_TEST.py" afterPath="$PROJECT_DIR$/ON_Interface_Case/QSR_Trade_for_here_in_TEST.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/keruyun_case/QSR_Trade_for_takeout_in_GLD.py" afterPath="$PROJECT_DIR$/ON_Interface_Case/QSR_Trade_for_takeout_in_GLD.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/keruyun_case/QSR_Trade_for_takeout_in_TEST.py" afterPath="$PROJECT_DIR$/ON_Interface_Case/QSR_Trade_for_takeout_in_TEST.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/keruyun_case/__init__.py" afterPath="$PROJECT_DIR$/ON_Interface_Case/__init__.py" />
     </list>
     <ignored path="python-Interface-test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,8 +28,8 @@
       <file leaf-file-name="执行测试.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/执行测试.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+            <state relative-caret-position="27">
+              <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -49,9 +38,11 @@
       <file leaf-file-name="loginandlogout.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/On_POS_case/loginandlogout.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="228">
+              <caret line="54" column="55" selection-start-line="54" selection-start-column="55" selection-end-line="54" selection-end-column="55" />
+              <folding>
+                <element signature="e#46#61#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -59,7 +50,7 @@
       <file leaf-file-name="FSR_Trade_for_here_in_TEST_byRepsonce.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ON_Interface_Case/FSR_Trade_for_here_in_TEST_byRepsonce.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
+            <state relative-caret-position="-9055">
               <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="20" />
               <folding />
             </state>
@@ -110,10 +101,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1592" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -206,29 +197,7 @@
       <recent name="D:\PycharmProjects\python-Interface-test\keruyun_case" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.执行测试">
-    <configuration default="false" name="Unittests in QSR_Trade_for_BaiduWaimai_in_TEST" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="D:\PycharmProjects\python-Interface-test\ON_Interface_Case" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python-Interface-test" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/keruyun_case/QSR_Trade_for_BaiduWaimai_in_TEST.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittests in loginandlogout">
     <configuration default="false" name="Unittests in FSR_Trade_for_here_in_TEST_bySQL" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -310,6 +279,28 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/执行测试.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in loginandlogout" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/On_POS_case" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python-Interface-test" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/On_POS_case/loginandlogout.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -447,19 +438,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in QSR_Trade_for_BaiduWaimai_in_TEST" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in FSR_Trade_for_here_in_TEST_bySQL" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in FSR_Trade_for_here_in_TEST_byRepsonce" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in QSR_Trade_for_Wechat_in_Online" />
-      <item index="4" class="java.lang.String" itemvalue="Python.执行测试" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in FSR_Trade_for_here_in_TEST_bySQL" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in FSR_Trade_for_here_in_TEST_byRepsonce" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in QSR_Trade_for_Wechat_in_Online" />
+      <item index="3" class="java.lang.String" itemvalue="Python.执行测试" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in loginandlogout" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.执行测试" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in FSR_Trade_for_here_in_TEST_byRepsonce" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in QSR_Trade_for_Wechat_in_Online" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in FSR_Trade_for_here_in_TEST_bySQL" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in QSR_Trade_for_BaiduWaimai_in_TEST" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in loginandlogout" />
+        <item index="1" class="java.lang.String" itemvalue="Python.执行测试" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in FSR_Trade_for_here_in_TEST_byRepsonce" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in QSR_Trade_for_Wechat_in_Online" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in FSR_Trade_for_here_in_TEST_bySQL" />
       </list>
     </recent_temporary>
   </component>
@@ -476,13 +467,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1461665313765</updated>
-    </task>
-    <task id="LOCAL-00002" summary="快餐订单压力测试">
-      <created>1461750225492</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1461750225492</updated>
     </task>
     <task id="LOCAL-00003" summary="快餐订单压力测试">
       <created>1461750295359</created>
@@ -820,51 +804,59 @@
       <option name="project" value="LOCAL" />
       <updated>1463019701532</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="开始APPium的UI自动化&#10;&#10;">
+      <created>1463034843194</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1463034843195</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_FSR_Trade_for_here_in_TEST_byRepsonce - 2016.05.10 at 16h 09m 53s.xml">
-      <configuration name="Unittests in FSR_Trade_for_here_in_TEST_byRepsonce" configurationId="tests" />
+    <history-entry file="Unittests_in_loginandlogout - 2016.05.12 at 16h 08m 31s.xml">
+      <configuration name="Unittests in loginandlogout" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_FSR_Trade_for_here_in_TEST_byRepsonce - 2016.05.10 at 16h 10m 53s.xml">
-      <configuration name="Unittests in FSR_Trade_for_here_in_TEST_byRepsonce" configurationId="tests" />
+    <history-entry file="Unittests_in_loginandlogout - 2016.05.12 at 16h 10m 31s.xml">
+      <configuration name="Unittests in loginandlogout" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_FSR_Trade_for_here_in_TEST_byRepsonce - 2016.05.10 at 16h 11m 17s.xml">
-      <configuration name="Unittests in FSR_Trade_for_here_in_TEST_byRepsonce" configurationId="tests" />
+    <history-entry file="Unittests_in_loginandlogout - 2016.05.12 at 16h 17m 44s.xml">
+      <configuration name="Unittests in loginandlogout" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_FSR_Trade_for_here_in_TEST_byRepsonce - 2016.05.10 at 16h 11m 22s.xml">
-      <configuration name="Unittests in FSR_Trade_for_here_in_TEST_byRepsonce" configurationId="tests" />
+    <history-entry file="Unittests_in_loginandlogout - 2016.05.12 at 16h 18m 40s.xml">
+      <configuration name="Unittests in loginandlogout" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_FSR_Trade_for_here_in_TEST_byRepsonce - 2016.05.10 at 16h 11m 26s.xml">
-      <configuration name="Unittests in FSR_Trade_for_here_in_TEST_byRepsonce" configurationId="tests" />
+    <history-entry file="Unittests_in_loginandlogout - 2016.05.12 at 16h 19m 11s.xml">
+      <configuration name="Unittests in loginandlogout" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_FSR_Trade_for_here_in_TEST_byRepsonce - 2016.05.10 at 16h 12m 40s.xml">
-      <configuration name="Unittests in FSR_Trade_for_here_in_TEST_byRepsonce" configurationId="tests" />
+    <history-entry file="Unittests_in_loginandlogout - 2016.05.12 at 16h 22m 39s.xml">
+      <configuration name="Unittests in loginandlogout" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_FSR_Trade_for_here_in_TEST_byRepsonce - 2016.05.10 at 16h 12m 59s.xml">
-      <configuration name="Unittests in FSR_Trade_for_here_in_TEST_byRepsonce" configurationId="tests" />
+    <history-entry file="Unittests_in_loginandlogout - 2016.05.12 at 16h 24m 11s.xml">
+      <configuration name="Unittests in loginandlogout" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_FSR_Trade_for_here_in_TEST_byRepsonce - 2016.05.11 at 15h 36m 24s.xml">
-      <configuration name="Unittests in FSR_Trade_for_here_in_TEST_byRepsonce" configurationId="tests" />
+    <history-entry file="Unittests_in_loginandlogout - 2016.05.12 at 16h 39m 58s.xml">
+      <configuration name="Unittests in loginandlogout" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_QSR_Trade_for_Wechat_in_Online - 2016.05.11 at 01h 20m 06s.xml">
-      <configuration name="Unittests in QSR_Trade_for_Wechat_in_Online" configurationId="tests" />
+    <history-entry file="Unittests_in_loginandlogout - 2016.05.12 at 16h 52m 27s.xml">
+      <configuration name="Unittests in loginandlogout" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_QSR_Trade_for_Wechat_in_Online - 2016.05.11 at 01h 24m 52s.xml">
-      <configuration name="Unittests in QSR_Trade_for_Wechat_in_Online" configurationId="tests" />
+    <history-entry file="Unittests_in_loginandlogout - 2016.05.12 at 16h 54m 26s.xml">
+      <configuration name="Unittests in loginandlogout" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1592" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30038023" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41495124" sideWeight="0.09272919" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.49789253" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40411702" sideWeight="0.9072708" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38761777" sideWeight="0.9072708" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -874,7 +866,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -931,7 +922,8 @@
     <MESSAGE value="添加了根据返回值下单" />
     <MESSAGE value="添加了Online" />
     <MESSAGE value="添加了Wxpython模块&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加了Wxpython模块&#10;" />
+    <MESSAGE value="开始APPium的UI自动化&#10;&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="开始APPium的UI自动化&#10;&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1294,7 +1286,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ON_Interface_Case/FSR_Trade_for_here_in_TEST_byRepsonce.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
+        <state relative-caret-position="-9055">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="20" />
           <folding />
         </state>
@@ -1302,17 +1294,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/执行测试.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+        <state relative-caret-position="27">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/On_POS_case/loginandlogout.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="228">
+          <caret line="54" column="55" selection-start-line="54" selection-start-column="55" selection-end-line="54" selection-end-column="55" />
+          <folding>
+            <element signature="e#46#61#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

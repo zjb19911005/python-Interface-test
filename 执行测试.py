@@ -11,7 +11,7 @@ from ON_Interface_Case import *#导入客如云文件的用例
 #将用例组建成数组
 allcase = 'D:\PycharmProjects\python-Interface-test\On_Interface_Case'#给出执行用例py文件的路径
 
-class runcase():
+class run_interface_case():
     def creatSuite(self):#产生测试套件
         testunit=unittest.TestSuite()
     #使用discovery找到文件夹下的所有用例
