@@ -22,7 +22,6 @@ class loginandlogout(unittest.TestCase):
         self.driver = webdriver.Remote('http://localhost:4723/wd/hub', self.desired_caps)  # 默认写法
 
         self.driver.implicitly_wait(20)
-        self.driver.switch_to_alert()
         # 下面就开始找元素找点了
 
         try:
