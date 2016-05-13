@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07c322fe-3b16-41a2-b96f-eb469f580d28" name="Default" comment="做了升级提示狂的验证">
+    <list default="true" id="07c322fe-3b16-41a2-b96f-eb469f580d28" name="Default" comment="添加多线程模块">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Exsit_or_not.py" afterPath="$PROJECT_DIR$/Exsit_or_not.py" />
     </list>
@@ -37,8 +37,8 @@
       <file leaf-file-name="loginandlogout.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/On_POS_case/loginandlogout.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+            <state relative-caret-position="190">
+              <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="41" selection-end-column="38" />
               <folding>
                 <element signature="e#46#61#0" expanded="true" />
               </folding>
@@ -49,11 +49,21 @@
       <file leaf-file-name="Exsit_or_not.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Exsit_or_not.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+            <state relative-caret-position="152">
+              <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
               <folding>
-                <element signature="e#55#68#0" expanded="true" />
+                <element signature="e#55#71#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utrunner.py" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/utrunner.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="166">
+              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -61,7 +71,7 @@
       <file leaf-file-name="FSR_Trade_for_here_in_TEST_bySQL.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ON_Interface_Case/FSR_Trade_for_here_in_TEST_bySQL.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2318">
+            <state relative-caret-position="1235">
               <caret line="65" column="27" selection-start-line="65" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
               <folding />
             </state>
@@ -153,7 +163,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -203,6 +212,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -219,29 +229,7 @@
       <recent name="D:\PycharmProjects\python-Interface-test\keruyun_case" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in loginandlogout">
-    <configuration default="false" name="Unittests in FSR_Trade_for_here_in_TEST_bySQL" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="D:\PycharmProjects\python-Interface-test\ON_Interface_Case" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python-Interface-test" />
-      <option name="SCRIPT_NAME" value="D:\PycharmProjects\python-Interface-test\keruyun_case\FSR_Trade_for_here_in_TEST_bySQL.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittests in Exsit_or_not">
     <configuration default="false" name="Unittests in FSR_Trade_for_here_in_TEST_byRepsonce" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -314,6 +302,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="python-Interface-test" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/On_POS_case/loginandlogout.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in Exsit_or_not" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python-Interface-test" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Exsit_or_not.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -460,19 +470,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in FSR_Trade_for_here_in_TEST_bySQL" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in FSR_Trade_for_here_in_TEST_byRepsonce" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in QSR_Trade_for_Wechat_in_Online" />
-      <item index="3" class="java.lang.String" itemvalue="Python.执行测试" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in loginandlogout" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in FSR_Trade_for_here_in_TEST_byRepsonce" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in QSR_Trade_for_Wechat_in_Online" />
+      <item index="2" class="java.lang.String" itemvalue="Python.执行测试" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in loginandlogout" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in Exsit_or_not" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in loginandlogout" />
-        <item index="1" class="java.lang.String" itemvalue="Python.执行测试" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in FSR_Trade_for_here_in_TEST_byRepsonce" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in QSR_Trade_for_Wechat_in_Online" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in FSR_Trade_for_here_in_TEST_bySQL" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in Exsit_or_not" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in loginandlogout" />
+        <item index="2" class="java.lang.String" itemvalue="Python.执行测试" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in FSR_Trade_for_here_in_TEST_byRepsonce" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in QSR_Trade_for_Wechat_in_Online" />
       </list>
     </recent_temporary>
   </component>
@@ -489,13 +499,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1461665313765</updated>
-    </task>
-    <task id="LOCAL-00009" summary="添加外卖订单用例">
-      <created>1461833516945</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1461833516945</updated>
     </task>
     <task id="LOCAL-00010" summary="添加外卖订单用例">
       <created>1461833748307</created>
@@ -833,30 +836,37 @@
       <option name="project" value="LOCAL" />
       <updated>1463048209286</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="添加多线程模块">
+      <created>1463049164316</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1463049164316</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_loginandlogout - 2016.05.12 at 17h 05m 37s.xml">
-      <configuration name="Unittests in loginandlogout" configurationId="tests" />
+    <history-entry file="Unittests_in_Exsit_or_not - 2016.05.13 at 09h 15m 27s.xml">
+      <configuration name="Unittests in Exsit_or_not" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_loginandlogout - 2016.05.12 at 17h 17m 36s.xml">
-      <configuration name="Unittests in loginandlogout" configurationId="tests" />
+    <history-entry file="Unittests_in_Exsit_or_not - 2016.05.13 at 09h 24m 03s.xml">
+      <configuration name="Unittests in Exsit_or_not" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_loginandlogout - 2016.05.12 at 17h 19m 47s.xml">
-      <configuration name="Unittests in loginandlogout" configurationId="tests" />
+    <history-entry file="Unittests_in_Exsit_or_not - 2016.05.13 at 09h 26m 51s.xml">
+      <configuration name="Unittests in Exsit_or_not" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_loginandlogout - 2016.05.12 at 17h 39m 41s.xml">
-      <configuration name="Unittests in loginandlogout" configurationId="tests" />
+    <history-entry file="Unittests_in_Exsit_or_not - 2016.05.13 at 09h 27m 05s.xml">
+      <configuration name="Unittests in Exsit_or_not" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_loginandlogout - 2016.05.12 at 17h 41m 36s.xml">
-      <configuration name="Unittests in loginandlogout" configurationId="tests" />
+    <history-entry file="Unittests_in_Exsit_or_not - 2016.05.13 at 09h 28m 28s.xml">
+      <configuration name="Unittests in Exsit_or_not" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_loginandlogout - 2016.05.12 at 17h 45m 11s.xml">
-      <configuration name="Unittests in loginandlogout" configurationId="tests" />
+    <history-entry file="Unittests_in_Exsit_or_not - 2016.05.13 at 09h 29m 13s.xml">
+      <configuration name="Unittests in Exsit_or_not" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_loginandlogout - 2016.05.12 at 17h 48m 10s.xml">
-      <configuration name="Unittests in loginandlogout" configurationId="tests" />
+    <history-entry file="Unittests_in_Exsit_or_not - 2016.05.13 at 09h 31m 05s.xml">
+      <configuration name="Unittests in Exsit_or_not" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_in_loginandlogout - 2016.05.12 at 18h 10m 53s.xml">
       <configuration name="Unittests in loginandlogout" configurationId="tests" />
@@ -877,7 +887,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41495124" sideWeight="0.09272919" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.49789253" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42903575" sideWeight="0.9072708" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42903575" sideWeight="0.9072708" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -947,7 +957,8 @@
     <MESSAGE value="开始APPium的UI自动化&#10;&#10;" />
     <MESSAGE value="开始APPium的UI自动化,添加第一条下单用例&#10;&#10;" />
     <MESSAGE value="做了升级提示狂的验证" />
-    <option name="LAST_COMMIT_MESSAGE" value="做了升级提示狂的验证" />
+    <MESSAGE value="添加多线程模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加多线程模块" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -968,14 +979,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ON_Interface_Case/FSR_Trade_for_here_in_TEST_byRepsonce.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ON_Interface_Case/FSR_Trade_for_here_in_TEST_byRepsonce.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1302,16 +1305,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ON_Interface_Case/FSR_Trade_for_here_in_TEST_bySQL.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2318">
+        <state relative-caret-position="1235">
           <caret line="65" column="27" selection-start-line="65" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/utrunner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/On_POS_case/loginandlogout.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        <state relative-caret-position="190">
+          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="41" selection-end-column="38" />
           <folding>
             <element signature="e#46#61#0" expanded="true" />
           </folding>
@@ -1320,10 +1331,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Exsit_or_not.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        <state relative-caret-position="152">
+          <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
           <folding>
-            <element signature="e#55#68#0" expanded="true" />
+            <element signature="e#55#71#0" expanded="true" />
           </folding>
         </state>
       </provider>
