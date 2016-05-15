@@ -78,7 +78,7 @@ class loginandlogout(unittest.TestCase):
 
 
         self.driver.find_element_by_id('com.shishike.calm:id/btn_ok').click()
-        self.driver.implicitly_wait(3)
+        self.driver.implicitly_wait(20)
 
 
         self.driver.find_element_by_id('com.shishike.calm:id/cashier_title_bar_menu_btn').click()
