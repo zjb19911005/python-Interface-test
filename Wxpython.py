@@ -21,6 +21,7 @@ import wx#导入wx模块
 # # app.OnInit()手动调用Oninit
 # app.MainLoop()#开始时间循环
 
+from 执行测试 import run_interface_case
 class On_Tool(wx.Frame):
     def __init__(self):
         wx.Frame.__init__(self,None,-1,'ZHU',size=(300,200))

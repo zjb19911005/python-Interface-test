@@ -23,11 +23,11 @@ class loginandlogout(unittest.TestCase):
         self.driver = webdriver.Remote('http://localhost:4723/wd/hub', self.desired_caps)  # 默认写法
 
         self.driver.implicitly_wait(20)
-        # 下面就开始找元素找点了
+        # 下面就开始找元素了
         try:
             self.driver.find_element_by_name('admin').click()
         except:
-            return catcterror.is_update()
+            catcterror.is_update
 
         x = 1
         for x in range(6):
@@ -40,12 +40,9 @@ class loginandlogout(unittest.TestCase):
 # 为多线程定义一个函数
 class catcterror():
     def is_update(self):
-        try:
-            self.driver.find_element_by_name('admin').click()
-        except:
-            self.driver.find_element_by_id('com.shishike.calm:id/negative_button').click()
-            self.driver.implicitly_wait(1)
-            self.driver.find_element_by_name('admin').click()
+        self.driver.find_element_by_id('com.shishike.calm:id/negative_button').click()
+        self.driver.implicitly_wait(1)
+        self.driver.find_element_by_name('admin').click()
 thread=[]
 t1=threading.Thread(target=loginandlogout)
 thread.append(t1)
@@ -60,7 +57,22 @@ if __name__=="__main__":
 
 
 
-
-
-
+# 
+# def helloworld():
+#     print 'helloworld'
+# def helloworld2():
+#     print 'helloworld2'
+# 
+# 
+# thread=[]
+# t1=threading.Thread(target=helloworld())
+# thread.append(t1)
+# t2=threading.Thread(target=helloworld2())
+# thread.append(t2)
+# 
+# if __name__=="__main__":
+#     for t in thread:
+#       t.SetDeaamon(True)
+#       t.start()
+#     t.join()
 

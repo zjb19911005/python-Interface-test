@@ -4,7 +4,7 @@ _author__ = 'Junior'
 import unittest
 
 from appium import webdriver
-from Exsit_or_not import *
+from 多线程的问题 import *
 
 class loginandlogout(unittest.TestCase):
     def setUp(self):
