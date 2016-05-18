@@ -7,6 +7,13 @@ import unittest
 from appium import webdriver
 
 
+def is_update(self):
+
+    self.driver.find_element_by_id('com.shishike.calm:id/negative_button').click()
+    self.driver.implicitly_wait(1)
+    self.driver.find_element_by_name('admin').click()
+
+
 class loginandlogout(unittest.TestCase):
     def setUp(self):
         self.desired_caps = {}#这里其实也可以把下面的参数,放到caps里面,通过字典的结构模式
@@ -27,7 +34,7 @@ class loginandlogout(unittest.TestCase):
         try:
             self.driver.find_element_by_name('admin').click()
         except:
-            catcterror.is_update
+            is_update(self)
 
         x = 1
         for x in range(6):
@@ -38,15 +45,11 @@ class loginandlogout(unittest.TestCase):
         self.driver.implicitly_wait(1)
 
 # 为多线程定义一个函数
-class catcterror():
-    def is_update(self):
-        self.driver.find_element_by_id('com.shishike.calm:id/negative_button').click()
-        self.driver.implicitly_wait(1)
-        self.driver.find_element_by_name('admin').click()
+
 thread=[]
 t1=threading.Thread(target=loginandlogout)
 thread.append(t1)
-t2=threading.Thread(target=catcterror.is_update)
+t2=threading.Thread(target=is_update)
 thread.append(t2)
 
 if __name__=="__main__":

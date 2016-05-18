@@ -8,6 +8,10 @@ import os
 import math
 
 from ON_Interface_Case import *#导入客如云文件的用例
+import smtplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+from email.mime.image import MIMEImage
 #将用例组建成数组
 allcase = 'D:\PycharmProjects\python-Interface-test\On_Interface_Case'#给出执行用例py文件的路径
 
@@ -31,3 +35,5 @@ class run_interface_case():
     runner = HTMLTestRunner.HTMLTestRunner(stream=fp,title=u'快餐下单压力测试报告',description=u'快餐下单压力测试结果数据')
     runner.run(allcasenames)
     fp.close()
+
+#在跟一个发送邮件的代码，就完美了，但是保密

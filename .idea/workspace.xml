@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07c322fe-3b16-41a2-b96f-eb469f580d28" name="Default" comment="添加多线程模块">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/On_POS_case/AutoBaselib.py" />
+    <list default="true" id="07c322fe-3b16-41a2-b96f-eb469f580d28" name="Default" comment="创建base库文件">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/On_POS_case/loginandlogout.py" afterPath="$PROJECT_DIR$/On_POS_case/loginandlogout.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/多线程的问题.py" afterPath="$PROJECT_DIR$/多线程的问题.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/执行测试.py" afterPath="$PROJECT_DIR$/执行测试.py" />
     </list>
     <ignored path="python-Interface-test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="loginandlogout.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="loginandlogout.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/On_POS_case/loginandlogout.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1063">
-              <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+            <state relative-caret-position="1672">
+              <caret line="91" column="26" selection-start-line="91" selection-start-column="26" selection-end-line="91" selection-end-column="26" />
               <folding>
                 <element signature="e#46#61#0" expanded="true" />
               </folding>
@@ -40,10 +40,42 @@
       <file leaf-file-name="AutoBaselib.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/On_POS_case/AutoBaselib.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
+            <state relative-caret-position="285">
               <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
               <folding>
                 <element signature="e#46#61#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="多线程的问题.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/多线程的问题.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FSR_Trade_for_here_in_TEST_bySQL.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ON_Interface_Case/FSR_Trade_for_here_in_TEST_bySQL.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="执行测试.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/执行测试.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+              <folding>
+                <element signature="e#14#35#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -87,11 +119,12 @@
         <option value="$PROJECT_DIR$/keruyun_case/FSR_Trade_for_here_in_TEST.py" />
         <option value="$PROJECT_DIR$/keruyun_case/FSR_Trade_for_here_in_TEST_byRepsonce.py" />
         <option value="$PROJECT_DIR$/keruyun_case/QSR_Trade_for_Wechat_in_Online.py" />
-        <option value="$PROJECT_DIR$/执行测试.py" />
         <option value="$PROJECT_DIR$/Exsit_or_not.py" />
         <option value="$PROJECT_DIR$/Wxpython.py" />
         <option value="$PROJECT_DIR$/On_POS_case/AutoBaselib.py" />
         <option value="$PROJECT_DIR$/On_POS_case/loginandlogout.py" />
+        <option value="$PROJECT_DIR$/多线程的问题.py" />
+        <option value="$PROJECT_DIR$/执行测试.py" />
       </list>
     </option>
   </component>
@@ -126,8 +159,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -160,6 +193,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="python-Interface-test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="python-Interface-test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ON_Interface_Case" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -178,7 +225,7 @@
       <recent name="D:\PycharmProjects\python-Interface-test\keruyun_case" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in loginandlogout">
+  <component name="RunManager" selected="Python tests.Unittests in 多线程的问题 (1)">
     <configuration default="false" name="Unittests in FSR_Trade_for_here_in_TEST_byRepsonce" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -190,28 +237,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="python-Interface-test" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/keruyun_case/FSR_Trade_for_here_in_TEST_byRepsonce.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in QSR_Trade_for_Wechat_in_Online" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="D:\PycharmProjects\python-Interface-test\ON_Interface_Case" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python-Interface-test" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/keruyun_case/QSR_Trade_for_Wechat_in_Online.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -273,6 +298,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="python-Interface-test" />
       <option name="SCRIPT_NAME" value="D:\PycharmProjects\python-Interface-test\多线程的问题.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in 多线程的问题 (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python-Interface-test" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/多线程的问题.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -420,18 +467,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in FSR_Trade_for_here_in_TEST_byRepsonce" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in QSR_Trade_for_Wechat_in_Online" />
-      <item index="2" class="java.lang.String" itemvalue="Python.执行测试" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in loginandlogout" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in 多线程的问题" />
+      <item index="1" class="java.lang.String" itemvalue="Python.执行测试" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in loginandlogout" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in 多线程的问题" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in 多线程的问题 (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in loginandlogout" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in 多线程的问题" />
-        <item index="2" class="java.lang.String" itemvalue="Python.执行测试" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in FSR_Trade_for_here_in_TEST_byRepsonce" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in QSR_Trade_for_Wechat_in_Online" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in 多线程的问题 (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in loginandlogout" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in 多线程的问题" />
+        <item index="3" class="java.lang.String" itemvalue="Python.执行测试" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in FSR_Trade_for_here_in_TEST_byRepsonce" />
       </list>
     </recent_temporary>
   </component>
@@ -448,20 +495,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1461665313765</updated>
-    </task>
-    <task id="LOCAL-00012" summary="添加外卖订单用例">
-      <created>1461836768212</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1461836768212</updated>
-    </task>
-    <task id="LOCAL-00013" summary="添加SQL文件">
-      <created>1461838263036</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1461838263036</updated>
     </task>
     <task id="LOCAL-00014" summary="添加SQL文件">
       <created>1461838460461</created>
@@ -792,28 +825,24 @@
       <option name="project" value="LOCAL" />
       <updated>1463277147585</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="创建base库文件">
+      <created>1463279264578</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1463279264579</updated>
+    </task>
+    <task id="LOCAL-00062" summary="创建base库文件">
+      <created>1463279500395</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1463279500395</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_Exsit_or_not - 2016.05.15 at 09h 01m 58s.xml">
-      <configuration name="Unittests in Exsit_or_not" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_loginandlogout - 2016.05.15 at 10h 04m 50s.xml">
-      <configuration name="Unittests in loginandlogout" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_loginandlogout - 2016.05.15 at 10h 05m 41s.xml">
-      <configuration name="Unittests in loginandlogout" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_loginandlogout - 2016.05.15 at 10h 06m 46s.xml">
-      <configuration name="Unittests in loginandlogout" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_loginandlogout - 2016.05.15 at 10h 07m 07s.xml">
-      <configuration name="Unittests in loginandlogout" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_loginandlogout - 2016.05.15 at 10h 08m 10s.xml">
-      <configuration name="Unittests in loginandlogout" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_loginandlogout - 2016.05.15 at 10h 19m 15s.xml">
       <configuration name="Unittests in loginandlogout" configurationId="tests" />
     </history-entry>
@@ -826,6 +855,24 @@
     <history-entry file="Unittests_in_loginandlogout - 2016.05.15 at 10h 24m 09s.xml">
       <configuration name="Unittests in loginandlogout" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_loginandlogout - 2016.05.15 at 10h 27m 55s.xml">
+      <configuration name="Unittests in loginandlogout" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_loginandlogout - 2016.05.15 at 10h 31m 17s.xml">
+      <configuration name="Unittests in loginandlogout" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_loginandlogout - 2016.05.15 at 10h 34m 32s.xml">
+      <configuration name="Unittests in loginandlogout" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_多线程的问题_(1) - 2016.05.15 at 13h 42m 25s.xml">
+      <configuration name="Unittests in 多线程的问题 (1)" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_多线程的问题_(1) - 2016.05.15 at 13h 43m 41s.xml">
+      <configuration name="Unittests in 多线程的问题 (1)" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_多线程的问题_(1) - 2016.05.15 at 13h 44m 44s.xml">
+      <configuration name="Unittests in 多线程的问题 (1)" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1592" y="-8" width="1936" height="1056" extended-state="6" />
@@ -836,18 +883,18 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41495124" sideWeight="0.09272919" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.49789253" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5146262" sideWeight="0.9072708" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997833" sideWeight="0.49578503" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5146262" sideWeight="0.9072708" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997833" sideWeight="0.49578503" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -882,7 +929,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="demo" />
     <MESSAGE value="快餐订单压力测试" />
     <MESSAGE value="快餐订单压力测试,修改测试数据" />
     <MESSAGE value="添加外卖订单用例" />
@@ -907,7 +953,8 @@
     <MESSAGE value="开始APPium的UI自动化,添加第一条下单用例&#10;&#10;" />
     <MESSAGE value="做了升级提示狂的验证" />
     <MESSAGE value="添加多线程模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加多线程模块" />
+    <MESSAGE value="创建base库文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="创建base库文件" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -932,7 +979,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1225,7 +1271,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1236,43 +1281,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/执行测试.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ON_Interface_Case/FSR_Trade_for_here_in_TEST_bySQL.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="65" column="27" selection-start-line="65" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/多线程的问题.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#55#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Wxpython.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="38" column="61" selection-start-line="38" selection-start-column="61" selection-end-line="38" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/On_POS_case/AutoBaselib.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
+        <state relative-caret-position="285">
           <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
           <folding>
             <element signature="e#46#61#0" expanded="true" />
@@ -1282,10 +1300,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/On_POS_case/loginandlogout.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1063">
-          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+        <state relative-caret-position="1672">
+          <caret line="91" column="26" selection-start-line="91" selection-start-column="26" selection-end-line="91" selection-end-column="26" />
           <folding>
             <element signature="e#46#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/多线程的问题.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ON_Interface_Case/FSR_Trade_for_here_in_TEST_bySQL.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/执行测试.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+          <folding>
+            <element signature="e#14#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
